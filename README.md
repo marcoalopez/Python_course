@@ -1,6 +1,4 @@
-# Introduction to the Python programming language for data analysis in earth sciences
-
-
+# ![header](https://raw.githubusercontent.com/marcoalopez/Python_course/main/img/header.webp?token=GHSAT0AAAAAABXXUAKHY4K23QNZNC2T25FYYYBBAVQ)
 
 This is an introduction to the Python programming language for data analysis using examples from the earth sciences. The aim of this course is to give an overview (i.e. breadth rather than depth) of the Python programming language and its different scientific analysis libraries to start using it in your data analysis and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
 
