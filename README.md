@@ -12,7 +12,7 @@ This is an introduction to the Python programming language for data analysis usi
 
 > **What is this course not about?**
 >
-> This is not a Python course on image analysis, geochemistry, machine learning or any other specific topic that you can think of. Although you will find examples of different topics during the course, for example image analysis, this course is not focused on a specific topic but on giving an overview of the language and the Python scientific ecosystem so that you can start using it and go deeper into the topic you want. Nor is it a course where you will learn all the details and machinery behind the Python language. Python is simply the programming tool of choice for data analysis because it is free and easy to learn.
+> This is not a Python course on image analysis, geochemistry, machine learning or any other specific topic that you can think of. Although you will find examples of different topics during the course, for example image analysis, this course is not focused on a specific topic but on giving an overview of the language and the Python scientific ecosystem so that you can start using it and go deeper into the topic you want. Nor is it a course where you will learn all the details and machinery behind the Python language. Python is simply the vehicle of choice for data analysis because it is free and easy to learn programming language.
 
 
 
