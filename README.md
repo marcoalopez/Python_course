@@ -1,4 +1,4 @@
-# ![header](https://raw.githubusercontent.com/marcoalopez/Python_course/main/img/header.webp?token=GHSAT0AAAAAABXXUAKHY4K23QNZNC2T25FYYYBBAVQ)
+# ![header](https://raw.githubusercontent.com/marcoalopez/Python_course/main/img/header.webp?token=GHSAT0AAAAAABXXUAKHYPO32IYLBZVZISEIYYBBIQA)
 
 This is an introduction to the Python programming language for data analysis using examples from the earth sciences. The aim of this course is to give an overview (i.e. breadth rather than depth) of the Python programming language and its different scientific analysis libraries to start using it in your data analysis and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
 
@@ -18,12 +18,12 @@ This is not a Python course on image analysis, geochemistry, machine learning or
 
 ### Walkthrough notebooks (🚨 in development!)
 
-- [Getting started with Python]()
+- [Getting started with Python](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Python_walkthrough.ipynb)
 
-- [Numpy ("numerical python") overview]()
-- [Matplotlib ("plotting library") overview]()
-- [Pandas overview]()
-- [Object-oriented Python for sciences: the basics]()
+- [Numpy ("numerical python") overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb)
+- [Matplotlib ("plotting library") overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb)
+- [Pandas overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb)
+- [Object-oriented Python for sciences: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb)
 
 
 
