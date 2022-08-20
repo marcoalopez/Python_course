@@ -11,19 +11,11 @@ This is an introduction to the Python programming language for data analysis usi
 - top-down teaching approach (i.e. TODO)
 
   
-
-<<<<<<< Updated upstream
-> **What is this course not about?**
->
-> This is not a Python course on image analysis, geochemistry, machine learning or any other specific topic that you can think of. Although you will find examples of different topics during the course, for example image analysis, this course is not focused on a specific topic but on giving an overview of the language and the Python scientific ecosystem so that you can start using it and go deeper into the topic you want. Nor is it a course where you will learn all the details and machinery behind the Python language. Python is simply the vehicle of choice for data analysis because it is free and easy to learn programming language.
-=======
 ### What is this course not about?
 
 This is not a Python course on image analysis, geochemistry, machine learning or any other specific topic that you can think of. Although you will find examples of different topics during the course, this course is aimed at giving an overview of the language and the Python scientific ecosystem so that you can start using it and go deeper into the topic you want. Nor is it a course where you will learn all the details and machinery behind the Python language. Python is simply the programming tool of choice for data analysis because it is free, easy to learn, and a great tool to introduce people to the world of scientific programming.
 
 > ⚠️ At the moment, this repository only contains the notebooks I use to guide the course but no other detailed explanations or the exercises and solutions to the course exercises. I have not yet decided whether I will make the whole course completely open or not. In any case, the walkthrough notebooks have all the necessary explanations (they are self-contained) and you can use them for free to learn about this topic.
->>>>>>> Stashed changes
-
 
 
 ### Walkthrough notebooks (🚨 in development!)
