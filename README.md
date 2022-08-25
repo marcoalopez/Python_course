@@ -1,6 +1,6 @@
 # ![header](img/header.webp)
 
-![logos](C:\Users\Marco\Documents\GitHub\Python_course\img\logos.png)
+![logos](img/logos.png)
 
 This is an introductory course to the Python programming language for data analysis using examples from the earth sciences. This course aims to give an overview (i.e. breadth rather than depth) of the Python programming language and the main scientific analysis libraries to start using it in your data analysis and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
 
@@ -45,7 +45,7 @@ This is not a Python course on image analysis, geochemistry, machine learning or
 
 ## Author
 
-[Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) is an associate researcher in the Department of Geology at the University of Oviedo...TODO
+[Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) is an associate researcher in the Department of Geology at the University of Oviedo. Marco is an expert in the analysis of the microstructure and texture (CPO) of solid materials, in particular with the backscattered electron diffraction technique (SEM-EBSD), the design of experiments with _in situ_ monitoring, and image analysis from different microscopy sources. He also has extensive experience in programming and code development for data analysis (https://github.com/marcoalopez). His main line of research is the study of the links between the mechanical properties (elastic, plastic and/or brittle) of rocks and their mineral composition, microstructure and crystallographic orientation of their components and seismic modelling (elastic properties) of rocks using averaging schemes and reconstruction of the microstructure and texture.
 
 
 
