@@ -2,7 +2,7 @@
 
 ![logos](img/logos.png)
 
-This is an introductory course to the Python programming language for data analysis using examples from the earth sciences. This course aims to give an overview (i.e. breadth rather than depth) of the Python programming language and the main scientific analysis libraries to start using it in your data analysis and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
+This is an introductory course to the Python programming language for data analysis using examples from the earth sciences. This course aims to give an overview (breadth rather than depth) of the Python programming language and the main scientific analysis libraries to start using it in your workflow and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
 
 - establishing a solid language foundation 
 
@@ -12,7 +12,7 @@ This is an introductory course to the Python programming language for data analy
 
   
 
-> ⚠️ At the moment, this repository only contains the unfinished walkthrough notebooks I will use to guide the course but no other detailed explanations (i.e. slides) or the exercises and solutions of the course. I have not yet decided whether I will make the whole course completely open or not. In any case, the walkthrough notebooks have all the necessary explanations (they are self-contained) and you can use them for free to learn about this topic.
+> ⚠️ At the moment, this repository contains the unfinished walkthrough notebooks I will use to guide the course but no other detailed explanations (i.e. slides) or the solutions to the exercises of the course. The course will be free but I have not yet decided whether I will make the whole course completely open or not. In any case, the walkthrough notebooks have all the necessary explanations (they are self-contained) and you can use them to learn about this topic.
 
 
 
@@ -20,18 +20,18 @@ This is an introductory course to the Python programming language for data analy
 
 - Install Python using anaconda (available soon)
 
-- [The Python programming language: getting started](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Python_walkthrough.ipynb) (almost done)
-- [Matplotlib overview: the scientific plotting library ](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (in development)
-- [Numpy ("numerical Python") overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
-- [Pandas overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (TODO)
+- [The Python programming language: getting started](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Python_walkthrough.ipynb) (almost done)
+- [Matplotlib overview: the scientific plotting library ](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (in development)
+- [Numpy ("numerical Python") overview](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
+- [Pandas overview](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (TODO)
 - Some Scipy ("scientific Python") examples (TODO)
-- [Object-oriented Python for sciences: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (TODO)
+- [Object-oriented Python for sciences: the basics](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (TODO)
 
 
 
 ## Prerequisites
 
-The course assumes no previous knowledge of the Python or any other programming language. We assume that the reader is familiar with notions of linear algebra and statistics.
+The course assumes no previous knowledge of the Python or any other programming language. We assume that the reader is familiar with basic linear algebra and statistics.
 
 
 
