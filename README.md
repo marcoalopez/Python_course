@@ -12,13 +12,13 @@ This is an introductory course to the Python programming language for data analy
 
   
 
-> ⚠️ At the moment, this repository contains the unfinished walkthrough notebooks I will use to guide the course but no other detailed explanations (i.e. slides) or the solutions to the exercises of the course. The course will be free but I have not yet decided whether I will make the whole course completely open or not. In any case, the walkthrough notebooks have all the necessary explanations (they are self-contained) and you can use them to learn about this topic.
+> ⚠️ At the moment, this repository contains the unfinished walkthrough notebooks used to guide the course but no other detailed explanations (i.e. slides) or the solutions to the exercises. The course will be free but I have not yet decided whether I will make the whole course completely open or not. In any case, the walkthrough notebooks will have explanations to be easily understood (self-contained) so anyone can use them to learn about the topic.
 
 
 
-## Walkthrough notebooks (🚨 in development!)
+## Walkthrough notebooks and notes (🚨 in development!)
 
-- Install Python using anaconda (available soon)
+- [Installing Python](https://github.com/marcoalopez/Python_course/blob/main/notebooks/installing_Python.md)
 
 - [The Python programming language: getting started](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Python_walkthrough.ipynb) (almost done)
 - [Matplotlib overview: the scientific plotting library ](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (in development)
@@ -39,7 +39,7 @@ The course assumes no previous knowledge of the Python or any other programming 
 
 #### What is this course not about?
 
-This is not a Python course on image analysis, geochemistry, machine learning or any other specific topic that you can think of. Although you will find examples of different topics during the course, this course is aimed at giving an overview of the language and the Python scientific ecosystem so that you can start using it and go deeper into the topic you want. Nor is it a course where you will learn all the details and machinery behind the Python language. Python is simply the programming tool of choice for data analysis because it is free, easy to learn, and a great tool to introduce people to the world of scientific programming.
+This is not a Python course on image analysis, geochemistry, machine learning or any other specific topic that you can think of. Although you will find examples of different topics during the course, it is aimed at giving an overview of the language and the Python scientific ecosystem so that you can start using it and go deeper into the topic you want. Nor is it a course where you will learn all the details and machinery behind the Python language. Python is simply the programming tool of choice for data analysis because it is free, easy to learn, and a great tool to introduce people to the world of scientific programming.
 
 
 
