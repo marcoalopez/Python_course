@@ -2,15 +2,17 @@
 
 [TOC]
 
-To install Python and the necessary scientific libraries we are going to use an open-source package and environment management system called **conda**. Conda serves to install, run, and update Python packages while making sure there are no incompatibilities between the versions of the packages you install. Also to manage (create, delete, and change), between environments on your local computer. Simply put, environments are Python installations that work independently so that you can have different versions of Python or other packages installed on your computer at the same time to test your scripts.
+To install Python and the necessary scientific libraries we will use an open-source package and environment management system called **conda**. Conda serves to install, run, and update Python packages while making sure there are no incompatibilities between the versions of the packages in your environment. Also to manage (create, delete, and change), between environments on your local computer. In a nutshell, environments are Python installations that work independently so you can have different Python versions or scientific packages installed on your computer at the same time. This is useful if you want to test your script on different versions or to keep isolated different groups of scientific libraries that may work with different python versions, for example.
 
 ## Install Python and conda using miniconda
 
+In the course we are going to install miniconda which allows conda to be used via the console (don't be afraid, it's simpler than it sounds).
+
 1. Go to https://docs.conda.io/en/latest/miniconda.html and download the latest version of miniconda for your operating system.
 
-2. Install miniconda
+2. Install miniconda following the instructions.
 
-3. Open the **Anaconda Prompt (miniconda)** and a console will pop up. You will see something similar to the following
+3. Open the **Anaconda Prompt (miniconda)** and a console will pop up. You will see something similar to this
 
    ```
    (base) C:\Users\Marco>
@@ -18,7 +20,7 @@ To install Python and the necessary scientific libraries we are going to use an 
 
    this may change slightly depending on the file system of your operating system.
 
-4. First make sure you have the latest version of **conda** installed, which is the python package manager. To do this, enter the following command:
+4. First make sure you have the latest version of **conda** installed. To do this, enter the following command:
 
    ```
    conda update conda
