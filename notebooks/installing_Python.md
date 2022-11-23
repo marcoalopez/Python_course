@@ -2,7 +2,7 @@
 
 [TOC]
 
-To install Python and the necessary scientific libraries we are going to use an open-source package and environment management system called **conda**. Conda serves to install, run, and update Python packages while making sure there are no incompatibilities between the versions of the packages you install. Also to manage (create, delete, and change), between environments on your local computer. Environments are simply Python installations that work independently so that you can have different versions of Python or other packages installed on your computer at the same time to test your scripts.
+To install Python and the necessary scientific libraries we are going to use an open-source package and environment management system called **conda**. Conda serves to install, run, and update Python packages while making sure there are no incompatibilities between the versions of the packages you install. Also to manage (create, delete, and change), between environments on your local computer. Simply put, environments are Python installations that work independently so that you can have different versions of Python or other packages installed on your computer at the same time to test your scripts.
 
 ## Install Python and conda using miniconda
 
@@ -10,7 +10,7 @@ To install Python and the necessary scientific libraries we are going to use an 
 
 2. Install miniconda
 
-3. Open the **Anaconda Prompt (miniconda)** and a console will open where you will see something similar to the following
+3. Open the **Anaconda Prompt (miniconda)** and a console will pop up. You will see something similar to the following
 
    ```
    (base) C:\Users\Marco>
@@ -25,15 +25,15 @@ To install Python and the necessary scientific libraries we are going to use an 
    ```
    and update if necessary. 
 
-5. If you have been paying attention, you will see that the current line of the console says "base" in brackets. This means that you are in the base Python environment. A wise strategy is to install nothing in this environment apart from the default Python libraries that were already added during the miniconda installation process. You can see which libraries using  ``conda list`` if you are curious. Our strategy will be to create a new Python environment, which we will call "main" and install all the libraries we are going to use in the course. For this we use the following command:
+5. If you have been paying attention, you will see that the current line of the console says "base" in parentheses. This means that you are in the base Python environment. A wise strategy is to install nothing in this environment apart from the default Python libraries that were already added during the miniconda installation process. You can see which libraries using  ``conda list`` if you are curious. Our strategy will be to create a new Python environment, which we will call "main" and install all the libraries we are going to use in the course. For this we use the following command:
 
    ```
    >>> conda create --name main python
    ```
 
-6. Once finished, use the command ``conda env list`` and you will see listed two environments, base and main, and an asterisk indicating that it is the active environment is "base". To install the Python libraries needed for the course we first have to activate the "main" environment, so we enter ``activate main``. Now you will see in brackets the word "main" instead of "base" indicating that we are in the environment main.
+6. Once finished, use the command ``conda env list`` and you will see listed two environments, base and main, and an asterisk indicating that "base" is the current active environment. To install the Python libraries needed for the course we first have to activate the "main" environment, so we enter ``activate main``. Now you will see in parentheses the word "main" instead of "base" indicating that we are in the environment "main".
 
-7. Now we proceed to install the libraries that we are going to use in the course. Instead of doing it one by one, we will do it in a single line as follows (you can paste and copy in your console)
+7. Then we proceed to install the libraries that we will use during the course. Instead of doing it one by one, we will do it in a single line as follows (you can paste and copy in your console)
 
    ```
    >>> conda install numpy scipy pandas matplotlib jupyterlab
@@ -46,7 +46,7 @@ To install Python and the necessary scientific libraries we are going to use an 
 9. Once the above installation process is done, we will proceed in the same way to launch Jupyter lab from scratch:
 	- Open the Anaconda Prompt (miniconda)
 	- activate the environment "main" using ``activate main``
-	- launch Jupyter lab using ``Jupyter lab``
+	- launch Jupyter lab using ``jupyter lab``
 
 ## Manage Python packages (install, remove, update, clean)
 
