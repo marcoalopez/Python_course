@@ -4,7 +4,7 @@ To install Python and the necessary scientific libraries we will use an open-sou
 
 - [Install Python and conda using miniconda](#install-python-and-conda-using-miniconda)
 - [Managing Python packages (install, remove, update, clean)](#managing-python-packages--install--remove--update--clean-)
-- [More on conda environments managements](#more-on-conda-environments-managements)
+- [More on conda environments](#more-on-conda-environments)
   * [Create an environment](#create-an-environment)
   * [Using an environment.ylm file](#using-an-environmentylm-file)
 
@@ -87,7 +87,7 @@ conda clean --all
 
 
 
-## More on conda environments managements
+## More on conda environments
 
 TODO
 
