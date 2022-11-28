@@ -31,36 +31,36 @@ For this course, we will install miniconda which allows conda to be used via the
    ```
    conda update conda
    ```
-   and update if necessary (tip: do this often). 
+   and update if necessary (tip 👉 do this often). 
 
-5. If you have been paying attention, you will see that the current line of the console says "base" in parentheses. This means that you are in the base Python environment. A wise strategy is to install nothing in this environment apart from the default Python libraries that were already added during the miniconda installation process. You can see which libraries using  ``conda list`` if you are curious. Our strategy will be to create a new Python environment, which we will call "main" and install all the libraries we are going to use in the course. For this we use the following command:
+5. If you have been paying attention, you will see that the current line of the console says "base" in parentheses. This means that you are in the base Python environment. A wise strategy is to install nothing in this environment apart from the default Python libraries that were already added during the miniconda installation process. You can see which libraries using  ``conda list`` if you are curious. Our strategy will be to create a new Python environment, which we will call "course" and install all the libraries we are going to use during the course. For this we use the following command:
 
    ```
-   >>> conda create --name main python
+   >>> conda create --name course python
    ```
 
-6. Once finished, use the command ``conda env list`` and you will see listed two environments, base and main, and an asterisk indicating that "base" is the currently active environment. To install the Python libraries needed for the course we first have to activate the "main" environment, so we enter ``activate main``. Now you will see in parentheses the word "main" instead of "base" indicating that we are in the environment "main".
+6. Once finished, use the command ``conda env list`` and you will see listed two environments, _base_ and _course_, and an asterisk indicating that "base" is the currently active environment. To install the Python libraries needed for the course we first have to activate the "course" environment, so we enter ``activate course``. Now you will see in parentheses the word "course" indicating that we are in this environment.
 
-7. Then we proceed to install the libraries that we will use during the course. Instead of doing it one by one, we will do it in a single line as follows (you can paste and copy it to your console)
+7. Then we proceed to install the libraries needed for the course. Instead of doing it one by one, we will do it in a single line as follows (you can paste and copy it to your console)
 
    ```
    >>> conda install numpy scipy pandas matplotlib jupyterlab
    ```
 
-   and say yes to all. Conda will install the chosen libraries and all the necessary dependencies. Once finished, you're done.
+   and say yes to all. Conda will install the chosen libraries/packages and all the necessary dependencies. Once finished, you're done.
 
 8. Now you can launch Jupyter lab by simply typing ``jupyter lab`` in the console and it will open the application in your default browser. We will see later how to work with Jupyter lab. The important thing is that the application has been launched.
 
 9. Once the above installation process is done, we will proceed in the same way to launch Jupyter lab from scratch:
 	- Open the Anaconda Prompt (miniconda)
-	- activate the environment "main" using ``activate main``
+	- activate the environment "main" using ``activate course``
 	- launch Jupyter lab using ``jupyter lab``
 
 
 
 ## Managing Python packages (install, remove, update, clean)
 
-The following are the basic commands for intalling, removing and and keep your Python libraries up to date.
+The following are the basic commands for installing, removing and and keep your Python libraries up to date.
 
 ```
 # list all packages and the versions installed in a specific environment:
@@ -102,27 +102,29 @@ conda env list
 
 to create a new environment using conda the general procedure is as follows (in the anaconda prompt)
 
-``conda create --name nameofmyenv <list of packages>``
+``conda create --name <name of my env> <list of packages>``
 
-> note: you can use ``-n`` instead of ``--name`` 
+> note: you can use ``-n`` instead of ``--name`` if preferred 
 
 some examples below
 
 ```
-# create an environment named "course" with the last version of Python supported by conda
->>> conda create -n course python
+# create an environment named "main" with the last version of Python supported by conda
+>>> conda create -n main python
 
 # create an environment with a specific version of Python
-conda create --name new_env python=3.10
+conda create --name new_env python=3.8.1
 
-# create an environment with the libraries numpy, scipy, matplolib and jupyterlab (conda will include all the necessary dependencies)
->>> conda create --name myscienv numpy scipy matplolib jupyterlab
+# create an environment named "SCIENV" with the libraries numpy, scipy, matplolib and jupyterlab (conda will include all the necessary dependencies)
+>>> conda create --name SCIENV numpy scipy matplolib jupyterlab
 
 # create an environment with the library scikit-image and all the neccesary dependencies
 >>> conda create --name image scikit-image
 ```
 
-### Using an environment.ylm file
+### Using YALM and environment.ylm files
+
+TODO
 
 ``conda env create -f environment.yml``
 
