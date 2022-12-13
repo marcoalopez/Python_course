@@ -122,11 +122,28 @@ conda create --name new_env python=3.8.1
 >>> conda create --name image scikit-image
 ```
 
+
+
 ### Using YALM and environment.ylm files
 
 TODO
 
+
+
+Creating an environment using an *environment.yml* file
+
 ``conda env create -f environment.yml``
+
+
+
+Exporting an environment to an *environment.yml* file
+
+```
+conda activate my_env
+conda env export > environment.yml
+```
+
+
 
 
 
