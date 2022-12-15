@@ -95,7 +95,7 @@ list all environments
 
 
 
-### Create an environment
+### Create  and remove an environment
 
 to create a new environment using conda the general procedure is as follows (in the anaconda prompt)
 
@@ -117,6 +117,9 @@ create an environment named "SCIENV" with the libraries numpy, scipy, matplolib 
 
 create an environment named "image" with the library scikit-image and all the neccesary dependencies
 >conda create --name image scikit-image
+
+remove an environment
+>conda env remove -n <name of the environment>
 ```
 
 
