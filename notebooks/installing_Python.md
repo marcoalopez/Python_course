@@ -70,7 +70,7 @@ install a new package in a specific environment:
 uninstall a package
 >conda remove <name of the package>
 
-update a specific package/librarie
+update a specific package
 >conda update <name of the package>
 
 update all packages in the environment ensuring compatibility
@@ -130,15 +130,15 @@ An ``environment.ylm`` file is used to specify the dependencies for a Python pro
 
 ![image-20221215134600921](https://github.com/marcoalopez/Python_course/blob/main/img/image-20221215134600921.png?raw=true)
 
-These files are a very useful way to share Python environments and ensure, for example, that anyone else using your code does so in exactly the same environment as you regardless of the operating system or machine where the code runs. 
+These files are a useful way to share Python environments and ensure, for example, that anyone else using your code does so in exactly the same environment as you regardless of the operating system or machine where the code runs. 
 
-To use an ``environment.ylm`` file, you first need to create a con environment using the YALM file as follows
+To create a conda environment using an ``environment.ylm`` file from the command lines use (if you are in the folder containing the ``environment.ylm`` otherwise you will have to specify the path)
 
 ``>conda env create -f environment.yml``
 
 This will create a new conda environment called with the name defined within the ``environment.ylm`` file. 
 
-To create an ``environment.ylm`` from a specific conda environment yo can do as follows
+To create an ``environment.ylm`` file from a specific conda environment do as follows
 
 ```
 >conda activate my_env
@@ -147,7 +147,7 @@ To create an ``environment.ylm`` from a specific conda environment yo can do as 
 
 This command will export the list of packages and their versions that are installed in the current active conda environment so that you can quickly share it with anyone.
 
-> 👉 Sharing Conda environments with other researchers facilitates the reprodicibility in research. So we encourage you to create and share an environment.yml file that describes the Python environment in which you carried out the data analysis every time you make a scientific publication.
+> 👉 Sharing Conda environments with other researchers facilitates the reproducibility in research. So we encourage you to create and share an environment.yml file that describes the Python environment in which you carried out the data analysis every time you make a scientific publication.
 
 
 
