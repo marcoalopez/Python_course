@@ -1,6 +1,6 @@
 # How to install Python for Data Science using anaconda
 
-To install Python and the necessary scientific libraries we will use an open-source package and environment management system called **conda**. Conda serves to install, run, and update Python packages while making sure there are no incompatibilities between the versions of the packages in your computer. Also, to manage (create, delete, and modify) environments on your computer. In a nutshell, environments are Python installations that work independently so you can have installed different Python versions or scientific packages at the same time. This is useful, for example, to test a script on different versions of Python and any other Python library or to keep isolated different scientific libraries that may work with different Python versions, etc.
+To install Python and the necessary scientific libraries we will use an open-source package and environment management system called **conda**. Conda serves to install, run, and update Python packages while making sure there are no incompatibilities between the versions of the packages on your computer. Also, to manage (create, delete, and modify) environments on your computer. In a nutshell, environments are Python installations that work independently so you can have installed different Python versions or scientific packages at the same time. This is useful, for example, to test a script on different versions of Python and any other Python library or to keep isolated different scientific libraries that may work with different Python versions, etc.
 
 - [Install Python and conda using miniconda](#install-python-and-conda-using-miniconda)
 - [Managing Python packages (install, remove, update, clean)](#managing-python-packages--install--remove--update--clean-)
@@ -12,7 +12,7 @@ To install Python and the necessary scientific libraries we will use an open-sou
 
 ## Install Python and conda using miniconda
 
-For this course, we will install miniconda which allows to manage Python packages through the console with a minimal installation (don't be afraid, it's simpler than it sounds).
+In this course, we will install miniconda which allows us to manage Python packages through the console with minimal installation (don't be scared, it's simpler than it sounds)..
 
 1. Go to https://docs.conda.io/en/latest/miniconda.html and download the latest version of miniconda for your operating system.
 
@@ -31,7 +31,7 @@ For this course, we will install miniconda which allows to manage Python package
    ```
    and update if necessary (👉 tip: do this often). 
 
-5. If you have been paying attention, you will see that the current line of the console says "base" in parentheses. This means that you are in the base Python environment. A wise strategy is to install nothing in this environment apart from the default Python libraries that were already added during the miniconda installation process. You can see which libraries using  ``conda list`` if you are curious. Our strategy will be to create a new Python environment, which we will call "course" and install all the libraries we are going to use during the course. For this we use the following command:
+5. If you have been paying attention, you will see that the current line in the console says "base" in parentheses. This means that you are in the base Python environment. A wise strategy is to install nothing in this environment apart from the default Python libraries that were already added during the miniconda installation process. You can see which libraries by using  ``conda list`` if you are curious. Our strategy will be to create a new Python environment, which we will call "course", and install there all the libraries that we will use during the course. For this we will use the following command:
 
    ```
    >conda create --name course python
@@ -39,7 +39,7 @@ For this course, we will install miniconda which allows to manage Python package
 
 6. Once finished, use the command ``conda env list`` and you will see listed two environments, _base_ and _course_, and an asterisk indicating that "base" is the currently active environment. To install the Python libraries needed in the _course_ environment we first have to activate the environment, so we enter ``activate course``. Now you will see in parentheses the word "course" indicating that we are within this environment.
 
-7. Then we proceed to install the libraries needed for the course. Instead of doing it one by one, we will do it in a single line as follows (you can paste and copy it to your console)
+7. Next, we proceed to install the libraries needed for the course. Instead of doing it one by one, we will do it in a single line as follows (you can paste and copy the command directly into your console)
 
    ```
    >conda install numpy scipy pandas matplotlib jupyterlab
@@ -130,7 +130,7 @@ An ``environment.ylm`` file is used to specify the dependencies for a Python pro
 
 ![image-20221215134600921](https://github.com/marcoalopez/Python_course/blob/main/img/image-20221215134600921.png?raw=true)
 
-These files are a useful way to share Python environments and ensure, for example, that anyone else using your code does so in exactly the same environment as you regardless of the operating system or machine where the code runs. 
+These files are a useful way to share Python environments and ensure, for example, that anyone else using your code does so in the same environment as you regardless of the operating system or machine where the code runs. 
 
 To create a conda environment using an ``environment.ylm`` file from the command lines use (if you are in the folder containing the ``environment.ylm`` otherwise you will have to specify the path)
 
@@ -147,7 +147,7 @@ To create an ``environment.ylm`` file from a specific conda environment do as fo
 
 This command will export the list of packages and their versions that are installed in the current active conda environment so that you can quickly share it with anyone.
 
-> 👉 Sharing Conda environments with other researchers facilitates the reproducibility in research. So we encourage you to create and share an environment.yml file that describes the Python environment in which you carried out the data analysis every time you make a scientific publication.
+> 👉 Sharing Conda environments with other researchers facilitates reproducibility in research. So we encourage you to create and share an environment.yml file that describes the Python environment in which you have conducted the data analysis every time you make a scientific publication.
 
 
 
