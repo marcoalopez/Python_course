@@ -24,7 +24,7 @@ This is an introductory course to the Python programming language for data analy
 - [Matplotlib overview: the scientific plotting library ](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (in development)
 - [Numpy ("numerical Python") overview](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
 - [Pandas overview](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (TODO)
-- Some Scipy ("scientific Python") examples (TODO)
+- [Few Scipy ("scientific Python") examples](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (TODO)
 - [Object-oriented Python for sciences: the basics](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (TODO)
 
 
@@ -45,7 +45,7 @@ This is not a Python course on image analysis, geochemistry, machine learning or
 
 ## Author
 
-[Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) is an associate researcher in the Department of Geology at the University of Oviedo. Marco is an expert in the analysis of the microstructure and texture (CPO) of solid materials, in particular with the backscattered electron diffraction technique (SEM-EBSD), the design of experiments with _in situ_ monitoring, and image analysis from different microscopy sources. He also has extensive experience in programming and code development for data analysis (https://github.com/marcoalopez). His main line of research is the study of the links between the mechanical properties (elastic, plastic and/or brittle) of rocks and their mineral composition, microstructure and crystallographic orientation of their components and seismic modelling (elastic properties) of rocks using averaging schemes and reconstruction of the microstructure and texture.
+[Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) is an associate researcher in the Department of Geology at the University of Oviedo. Marco is an expert in the analysis of the microstructure and texture (CPO) of solid materials, in particular with the backscattered electron diffraction technique (SEM-EBSD), the design of experiments with _in situ_ monitoring, and image analysis from different microscopy sources. He has extensive experience in programming and code development for data analysis (https://github.com/marcoalopez). His main line of research is the study of the links between the mechanical properties (elastic, plastic and/or brittle) of rocks and their mineral composition, microstructure and crystallographic orientation of their components and seismic modelling (elastic properties) of rocks using averaging schemes and reconstruction of the microstructure and texture.
 
 
 
@@ -73,7 +73,7 @@ All the notebooks are licensed under a [Creative Commons Attribution-NonCommerci
 
 ---
 
-*Copyright © 2022 Marco A. Lopez-Sanchez*  
+*Copyright © 2023 Marco A. Lopez-Sanchez*  
 
 *Information presented on this website and the notebooks is provided without any express or implied warranty and may include technical inaccuracies or typing errors; the author reserve the right to modify or enhance the content of this website as well as the notebooks at any time without previous notice. This webpage and the notebooks are not liable for the content of external links. Notebook contents under [Creative Commons Attribution license CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) and codes under [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).*
 
