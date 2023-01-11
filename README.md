@@ -24,7 +24,7 @@ This is an introductory course to the Python programming language for data analy
 - [Matplotlib overview: the scientific plotting library ](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (in development)
 - [Numpy ("numerical Python") overview](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
 - [Pandas overview](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (TODO)
-- [Few Scipy ("scientific Python") examples](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (TODO)
+- [Few Scipy ("scientific Python") examples](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (TODO)
 - [Object-oriented Python for sciences: the basics](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (TODO)
 
 
