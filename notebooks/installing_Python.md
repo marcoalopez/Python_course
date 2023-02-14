@@ -54,7 +54,17 @@ In this course, we will install miniconda which allows us to manage Python packa
 	- activate the environment "course" using ``activate course``
 	- launch Jupyter lab using ``jupyter lab``
 
+## Using dedicated (Jupyter notebook) applications
 
+If you prefer to use a dedicated application instead of opening jupyter notebooks in your default browser, there are several alternatives. Here we will mention two:
+
+- Visual Studio Code (a.k.a. vscode)  https://code.visualstudio.com/
+
+This is a free source-code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via dedicated extensions. As an advantage over JupyterLab, it has a variable browser by default. More detailed instructions on how to use jupyter notebooks in vscode can be found at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+
+- JupyterLab desktop https://github.com/jupyterlab/jupyterlab-desktop/releases
+
+This is a cross-platform desktop application for JupyterLab. You can find the user guide at the following link https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md
 
 ## Managing Python packages (install, remove, update, clean)
 
@@ -148,6 +158,3 @@ To create an ``environment.ylm`` file from a specific conda environment do as fo
 This command will export the list of packages and their versions that are installed in the current active conda environment so that you can quickly share it with anyone.
 
 > 👉 Sharing Conda environments with other researchers facilitates reproducibility in research. So we encourage you to create and share an environment.yml file that describes the Python environment in which you have conducted the data analysis every time you make a scientific publication.
-
-
-
