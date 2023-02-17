@@ -60,7 +60,7 @@ If you prefer to use a dedicated application instead of opening jupyter notebook
 
 - Visual Studio Code (a.k.a. vscode)  https://code.visualstudio.com/
 
-This is a free source-code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via dedicated extensions. As an advantage over JupyterLab, it has a variable browser by default. More detailed instructions on how to use jupyter notebooks in vscode can be found at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+This is a free source-code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via extensions. As an advantage over JupyterLab, it has a variable browser by default. More detailed instructions on how to use jupyter notebooks in vscode can be found at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
 
 - JupyterLab desktop https://github.com/jupyterlab/jupyterlab-desktop/releases
 
@@ -129,10 +129,12 @@ create an environment named "image" with the library scikit-image and all the ne
 >conda create --name image scikit-image
 
 remove an environment
->conda env remove -n <name of the environment>
+>conda env remove -name <name of the environment>
 ```
 
 
+
+More info here: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
 ### Using environment.ylm (YALM) files
 
