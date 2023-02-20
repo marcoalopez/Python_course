@@ -60,7 +60,7 @@ If you prefer to use a dedicated application instead of opening jupyter notebook
 
 - Visual Studio Code (a.k.a. vscode)  https://code.visualstudio.com/
 
-This is a free source-code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via extensions. As an advantage over JupyterLab, it has a variable browser by default. More detailed instructions on how to use jupyter notebooks in vscode can be found at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+This is a free code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via extensions. As an advantage over JupyterLab, it has a variable browser by default. More detailed instructions on how to use jupyter notebooks in vscode can be found at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
 
 - JupyterLab desktop https://github.com/jupyterlab/jupyterlab-desktop/releases
 
@@ -120,16 +120,16 @@ create an environment named "main" with the last version of Python supported by 
 >conda create -n main python
 
 create an environment with a specific version of Python
->conda create --name new_env python=3.8.1
+>conda create --n new_env python=3.8.1
 
 create an environment named "SCIENV" with the libraries numpy, scipy, matplolib and jupyterlab (conda will include all the necessary dependencies)
->conda create --name SCIENV numpy scipy matplolib jupyterlab
+>conda create --n SCIENV numpy scipy matplolib jupyterlab
 
 create an environment named "image" with the library scikit-image and all the neccesary dependencies
->conda create --name image scikit-image
+>conda create --n image scikit-image
 
-remove an environment
->conda env remove -name <name of the environment>
+remove an existing environment
+>conda env remove -n <ENV NAME>
 ```
 
 
