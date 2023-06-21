@@ -1,6 +1,6 @@
 # How to install Python for Data Science using anaconda
 
-To install Python and the necessary scientific libraries we will use an open-source package and environment management system called **conda**. Conda sas a comprehensive solution for installing, running, and updating Python packages while ensuring compatibility across different package versions on your computer. Additionally, it allows you to efficiently manage Python environments,  which are essentially independent Python installations. This capability  enables you to have multiple Python versions or scientific packages  installed simultaneously on your computer. This is useful, for example, to test a script on different versions of Python and any other Python library or to keep isolated different scientific libraries that may work with different Python versions, etc.
+To install Python and the necessary scientific libraries we will use an open-source package and environment management system called **conda**. Conda has a comprehensive solution for installing, running, and updating Python packages while ensuring compatibility across different package versions on your computer. Additionally, it allows you to efficiently manage Python environments, which are essentially independent Python installations. This capability enables you to have multiple Python versions or scientific packages installed simultaneously on your computer. This is useful, for example, to test a script on different versions of Python and any other Python library or to keep isolated different scientific libraries that may work with different Python versions, etc.
 
 - [Install Python and conda using miniconda](#install-python-and-conda-using-miniconda)
 - [Managing Python packages (install, remove, update, clean)](#managing-python-packages--install--remove--update--clean-)
@@ -18,7 +18,7 @@ For this course, we will install miniconda which allows us to manage Python pack
 
 2. Install miniconda following the instructions.
 
-3. Open the **Anaconda Prompt (miniconda)** and a console will pop up. You will see something similar to this (the path may change depending on the file system of your operating system)
+3. Open the **Anaconda Prompt** and a console will pop up. You will see something similar to this (the path may change depending on the file system of your operating system)
 
    ```
    (base) C:\Users\Marco>
@@ -102,8 +102,6 @@ TODO
 list all existing environments
 >conda env list
 ```
-
-
 
 ### Create  and remove an environment
 
