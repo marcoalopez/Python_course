@@ -1,6 +1,6 @@
 # How to install Python for Data Science using anaconda
 
-To install Python and the necessary scientific libraries we will use an open-source package and environment management system called **conda**. Conda serves to install, run, and update Python packages while making sure there are no incompatibilities between the versions of the packages on your computer. Also, to manage (create, delete, and modify) environments on your computer. In a nutshell, environments are Python installations that work independently so you can have installed different Python versions or scientific packages at the same time. This is useful, for example, to test a script on different versions of Python and any other Python library or to keep isolated different scientific libraries that may work with different Python versions, etc.
+To install Python and the necessary scientific libraries we will use an open-source package and environment management system called **conda**. Conda sas a comprehensive solution for installing, running, and updating Python packages while ensuring compatibility across different package versions on your computer. Additionally, it allows you to efficiently manage Python environments,  which are essentially independent Python installations. This capability  enables you to have multiple Python versions or scientific packages  installed simultaneously on your computer. This is useful, for example, to test a script on different versions of Python and any other Python library or to keep isolated different scientific libraries that may work with different Python versions, etc.
 
 - [Install Python and conda using miniconda](#install-python-and-conda-using-miniconda)
 - [Managing Python packages (install, remove, update, clean)](#managing-python-packages--install--remove--update--clean-)
@@ -12,7 +12,7 @@ To install Python and the necessary scientific libraries we will use an open-sou
 
 ## Install Python and conda using miniconda
 
-In this course, we will install miniconda which allows us to manage Python packages through the console with minimal installation (don't be scared, it's simpler than it sounds)..
+For this course, we will install miniconda which allows us to manage Python packages through the console with a minimal installation (don't be scared, it's simpler than it sounds).
 
 1. Go to https://docs.conda.io/en/latest/miniconda.html and download the latest version of miniconda for your operating system.
 
@@ -54,7 +54,7 @@ In this course, we will install miniconda which allows us to manage Python packa
 	- activate the environment "course" using ``activate course``
 	- launch Jupyter lab using ``jupyter lab``
 
-## Using dedicated (Jupyter notebook) applications
+## Using a dedicated Jupyter notebook application
 
 If you prefer to use a dedicated application instead of opening jupyter notebooks in your default browser, there are several alternatives. Here we will mention two:
 
@@ -75,7 +75,7 @@ list all packages and the versions installed in a specific environment:
 >conda list
 
 install a new package in a specific environment:
->conda install <name of the package>
+>conda install <name(s) of the package(s)>
 
 uninstall a package
 >conda remove <name of the package>
@@ -99,7 +99,7 @@ previous versions of packages/libraries when upgrading).
 TODO
 
 ```
-list all environments
+list all existing environments
 >conda env list
 ```
 
@@ -111,7 +111,7 @@ to create a new environment using conda the general procedure is as follows (in 
 
 ``>conda create --name <name of my env> <list of packages>``
 
-> note: you can use ``-n`` instead of ``--name`` if preferred 
+> you can use ``-n`` instead of ``--name`` if preferred 
 
 some examples below
 
