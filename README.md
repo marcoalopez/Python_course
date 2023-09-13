@@ -2,7 +2,7 @@
 
 ![logos](img/logos.png)
 
-_Brought to you by [Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) - This website was last modified: 2023-02-17_
+_Brought to you by [Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) - This website was last modified: 2023-09-13_
 
 This is an introductory course to the Python programming language for data analysis using examples from the earth sciences. This course aims to give an overview (breadth rather than depth) of the Python programming language and the main scientific analysis libraries to start using it in your workflow and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
 
@@ -14,7 +14,7 @@ This is an introductory course to the Python programming language for data analy
 
   
 
-> ⚠️ At the moment, this repository contains the unfinished walkthrough notebooks used to guide the course but no other detailed explanations (i.e. slides) or the solutions to the exercises. The course will be free but I have not yet decided whether I will make the whole course completely open or not. In any case, the walkthrough notebooks are self-explanatory so anyone can use them to learn about the topic.
+> ⚠️ At the moment, this repository contains the unfinished walkthrough notebooks used to guide the course but no other detailed explanations (i.e. slides) or solutions to the exercises. The course will be free but I have not yet decided whether I will make the whole course completely open or not. In any case, the walkthrough notebooks are self-explanatory so anyone can use them to learn about the topic.
 
 
 
@@ -71,7 +71,7 @@ TODO
 ## License
 
 [![Creative Commons Licence](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-All the notebooks are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+All the notebooks are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ---
 
