@@ -112,3 +112,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+notebooks/figure01.png
