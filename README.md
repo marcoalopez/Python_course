@@ -2,7 +2,7 @@
 
 ![logos](img/logos.png)
 
-_Brought to you by [Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) - This website was last modified: 2023-10-24_
+_Brought to you by [Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) - This website was last modified: 2023-11-13_
 
 This is an introductory course to the Python programming language for data analysis using examples from the earth sciences. This course aims to give an overview (breadth rather than depth) of the Python programming language and the main scientific analysis libraries to start using it in your workflow and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
 
@@ -22,12 +22,12 @@ This is an introductory course to the Python programming language for data analy
 
 - [Installing Python](https://github.com/marcoalopez/Python_course/blob/main/notebooks/installing_Python.md)
 
-- [The Python programming language: getting started](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Python_walkthrough.ipynb) (mostly done)
-- [Matplotlib overview: the scientific plotting library ](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (mostly done)
-- [Numpy ("numerical Python") overview](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
-- [Pandas overview](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (in development)
-- [Scipy ("scientific Python") examples](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (in development)
-- [Object-oriented Python for sciences: the basics](https://deepnote.com/viewer/github/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (in development)
+- [The Python programming language: getting started](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Python_walkthrough.ipynb) (mostly done)
+- [Matplotlib overview: the scientific plotting library ](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (mostly done)
+- [Numpy ("numerical Python") overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
+- [Pandas overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (in development)
+- [Scipy ("scientific Python") examples](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (in development)
+- [Object-oriented Python for sciences: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (in development)
 
 
 
