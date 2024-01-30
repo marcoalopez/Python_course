@@ -1,4 +1,4 @@
-# How to install Python for Data Science using anaconda
+# How to install Python for Data Science using miniconda
 
 To install Python and the necessary scientific libraries, we will use a free environment management system called **conda**. The conda management system allows you to install, run, and update Python packages while ensuring compatibility between different package versions on your machine. It also allows you to efficiently manage Python environments, which are essentially independent Python installations. This capability enables you to have multiple versions of Python or scientific packages installed on your computer at the same time. This is useful, for example, to test a script on different versions of Python and any other Python library, or to keep separate different scientific libraries that may work with different Python versions, etc.
 
@@ -8,9 +8,9 @@ To install Python and the necessary scientific libraries, we will use a free env
   * [Create an environment](#create-an-environment)
   * [Using an environment.ylm file](#using-an-environmentylm-file)
 
-## Install Python and conda using miniconda
+## Install Python, scientific libraries, and Jupyter Lab using Miniconda
 
-For this course, we will install miniconda which allows us to manage Python packages through the console with a minimal installation (don't be scared, it's simpler than it sounds).
+For this course, we will install Miniconda which allows us to manage Python packages through the console with a minimal installation (don't be scared, it's simpler than it sounds).
 
 1. Go to https://docs.conda.io/en/latest/miniconda.html and download the latest version of miniconda for your operating system.
 
@@ -53,11 +53,11 @@ For this course, we will install miniconda which allows us to manage Python pack
 	- launch Jupyter lab using ``jupyter lab``
 	
 
-We will learn how to use Jupyter Lab in the course.
+We will learn how to use Jupyter Lab during the course.
 
 > [!TIP]
-> **Using a dedicated Jupyter notebook application**
-> 
+> **Using a dedicated Jupyter Notebook application**
+>
 > If you prefer to use a dedicated application instead of opening jupyter notebooks in your default browser, there are several alternatives. Here we will mention two:
 >
 > - Visual Studio Code (a.k.a. vscode)  https://code.visualstudio.com/
@@ -68,8 +68,9 @@ We will learn how to use Jupyter Lab in the course.
 >
 > This is a cross-platform desktop application for JupyterLab. You can find the user guide at the following link https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md
 
+
 > [!NOTE]
-> An alternative is to download and install the [Anaconda Python distribution](https://docs.anaconda.com/free/anaconda/install/) instead of miniconda, as it contains all the scientific packages needed for the course and many more (> 5 GB of disk space). Please note that during the course we won't be using most of the libraries that come with the Anaconda distribution (e.g. machine learning libraries, etc.), so we recommend using Miniconda.
+> An alternative is to download and install the [Anaconda Python distribution](https://docs.anaconda.com/free/anaconda/install/) that contains all the scientific packages needed for the course and many more (> 5 Gb of disk space). Please note that during the course we won't be using most of the scientific libraries that come with the Anaconda distribution (e.g. machine learning libraries, etc.), so we recommend using Miniconda instead.
 
 ## Managing Python packages (install, remove, update, clean)
 
