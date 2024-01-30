@@ -13,12 +13,12 @@ This is an introductory course to the Python programming language for data analy
 - top-down teaching approach
 
   
-> [!WARNING]
+> [!NOTE]
 > At the moment, this repository contains the unfinished walkthrough notebooks that guide the course but without detailed explanations (i.e. slides) or solutions to the exercises. The course is free and licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](http://creativecommons.org/licenses/by-nc-sa/4.0/). Although they do not contain the full course, the walkthrough notebooks are self-explanatory, so anyone can use them to learn about the subject at their own pace. Please, do not post exercise solutions to any public forum or publicly-accessible software repository
 
 
 
-## Walkthrough notebooks and notes (⚠️ in development!)
+## Walkthrough notebooks and notes (in development!)
 
 - [Installing Python for data science](https://github.com/marcoalopez/Python_course/blob/main/notebooks/installing_Python.md)
 
@@ -26,8 +26,8 @@ This is an introductory course to the Python programming language for data analy
 - [Matplotlib overview: the scientific plotting library ](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (mostly done)
 - [Numpy ("numerical Python") overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
 - [Pandas overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (in development)
-- [Scipy ("scientific Python") examples](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (in development)
-- [Object-oriented Python for sciences: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (only outlined)
+- [Scipy ("scientific Python") examples](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (outlined)
+- [Object-oriented Python for sciences: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (outlined)
 
 
 
@@ -47,7 +47,7 @@ This is not a Python course on image analysis, geochemistry, machine learning or
 
 ## Author
 
-[Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) is an associate researcher in the Department of Geology at the University of Oviedo with expertise in the analysis of the microstructure and texture (CPO) of solid materials. He has a broad experience in programming and code development for data analysis (https://github.com/marcoalopez). His main line of research is the study of the links between the mechanical properties (elastic, plastic and/or brittle) of rocks and their mineral composition, microstructure and crystallographic orientation of their components and seismic modelling (elastic properties) of rocks using averaging schemes and reconstruction of the microstructure and texture.
+[Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) is a researcher in the Department of Geology at the University of Oviedo with expertise in the analysis of the microstructure and texture (CPO) of solid materials. He has a broad experience in programming and code development for data analysis (https://github.com/marcoalopez). His main line of research is the study of the links between the mechanical properties (elastic, plastic and/or brittle) of rocks and their mineral composition, microstructure and crystallographic orientation of their components and seismic modelling (elastic properties) of rocks using averaging schemes and reconstruction of the microstructure and texture.
 
 
 
@@ -75,8 +75,9 @@ All the notebooks are licensed under a [Creative Commons Attribution-NonCommerci
 
 ---
 
-*Copyright © 2023 Marco A. Lopez-Sanchez*  
+*Copyright © 2024 Marco A. Lopez-Sanchez*  
 
-*Information presented on this website and the notebooks is provided without any express or implied warranty and may include technical inaccuracies or typing errors; the author reserve the right to modify or enhance the content of this website as well as the notebooks at any time without previous notice. This webpage and the notebooks are not liable for the content of external links.
+> [!WARNING]
+> Information presented on this website and the notebooks is provided without any express or implied warranty and may include technical inaccuracies or typing errors; the author reserve the right to modify or enhance the content of this website as well as the notebooks at any time without previous notice. This webpage and the notebooks are not liable for the content of external links.
 
 *Hosted on GitHub Pages — This website was created with [Typora](https://typora.io/)*
