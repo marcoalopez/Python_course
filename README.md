@@ -2,7 +2,7 @@
 
 ![logos](img/logos.png)
 
-_Brought to you by [Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) - This website was last modified: 2023-11-13_
+_Brought to you by [Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) - This website was last modified: 2024-01-30_
 
 This is an introductory course to the Python programming language for data analysis using examples from the earth sciences. This course aims to give an overview (breadth rather than depth) of the Python programming language and the main scientific analysis libraries to start using it in your workflow and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
 
@@ -13,21 +13,21 @@ This is an introductory course to the Python programming language for data analy
 - top-down teaching approach
 
   
+> [!WARNING]
+> At the moment, this repository contains the unfinished walkthrough notebooks that guide the course but without detailed explanations (i.e. slides) or solutions to the exercises. The course is free and licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](http://creativecommons.org/licenses/by-nc-sa/4.0/). Although they do not contain the full course, the walkthrough notebooks are self-explanatory, so anyone can use them to learn about the subject at their own pace. Please, do not post exercise solutions to any public forum or publicly-accessible software repository
 
-> ⚠️ At the moment, this repository contains the unfinished walkthrough notebooks used to guide the course but no other detailed explanations (i.e. slides) or solutions to the exercises. The course is free and licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](http://creativecommons.org/licenses/by-nc-sa/4.0/). The course will not include the exercise solutions but the walkthrough notebooks are self-explanatory so anyone can use them to learn about the topic. Please, do not post exercise solutions to any public forum or publicly-accessible software repository
 
 
+## Walkthrough notebooks and notes (⚠️ in development!)
 
-## Walkthrough notebooks and notes (🚨 in development!)
-
-- [Installing Python](https://github.com/marcoalopez/Python_course/blob/main/notebooks/installing_Python.md)
+- [Installing Python for data science](https://github.com/marcoalopez/Python_course/blob/main/notebooks/installing_Python.md)
 
 - [The Python programming language: getting started](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Python_walkthrough.ipynb) (mostly done)
 - [Matplotlib overview: the scientific plotting library ](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Matplotlib_walkthrough.ipynb) (mostly done)
 - [Numpy ("numerical Python") overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
 - [Pandas overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (in development)
 - [Scipy ("scientific Python") examples](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (in development)
-- [Object-oriented Python for sciences: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (in development)
+- [Object-oriented Python for sciences: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (only outlined)
 
 
 

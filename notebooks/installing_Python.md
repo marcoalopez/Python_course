@@ -14,7 +14,10 @@ For this course, we will install Miniconda which allows us to manage Python pack
 
 1. Go to https://docs.conda.io/projects/miniconda/en/latest/ and download the latest version of miniconda for your operating system.
 
-2. Install miniconda following the instructions.
+2. Install Miniconda following the instructions.
+
+> [!NOTE]
+> An alternative is to download and install the [Anaconda Python distribution](https://docs.anaconda.com/free/anaconda/install/) that contains all the scientific packages needed for the course and many more (> 5 Gb of disk space). Please note that during the course we won't be using most of the scientific libraries that come with the Anaconda distribution (e.g. machine learning libraries, etc.), so we recommend using Miniconda instead.
 
 3. Open the **Anaconda Prompt** and a console will pop up. You will see something like this (the path may vary depending on the file system of your operating system)
 
@@ -55,22 +58,21 @@ For this course, we will install Miniconda which allows us to manage Python pack
 
 We will learn how to use Jupyter Lab during the course.
 
+
+
 > [!TIP]
 > **Using a dedicated Jupyter Notebook application**
 >
 > If you prefer to use a dedicated application instead of opening jupyter notebooks in your default browser, there are several alternatives. Here we will mention two:
 >
-> - Visual Studio Code (a.k.a. vscode)  https://code.visualstudio.com/
+> - **Visual Studio Code** (a.k.a. vscode):  https://code.visualstudio.com/
 >
 > This is a free code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via extensions. As an advantage over Jupyter Lab, it has a variable browser by default. More detailed instructions on how to use jupyter notebooks in vscode can be found at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
 >
-> - JupyterLab desktop https://github.com/jupyterlab/jupyterlab-desktop/releases
+> - **JupyterLab desktop**: https://github.com/jupyterlab/jupyterlab-desktop/releases
 >
 > This is a cross-platform desktop application for JupyterLab. You can find the user guide at the following link https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md
 
-
-> [!NOTE]
-> An alternative is to download and install the [Anaconda Python distribution](https://docs.anaconda.com/free/anaconda/install/) that contains all the scientific packages needed for the course and many more (> 5 Gb of disk space). Please note that during the course we won't be using most of the scientific libraries that come with the Anaconda distribution (e.g. machine learning libraries, etc.), so we recommend using Miniconda instead.
 
 ## Managing Python packages (install, remove, update, clean)
 
