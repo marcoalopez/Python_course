@@ -1,25 +1,19 @@
-# How to install Python for Data Science using miniconda
+# How to install Python for Data Science using Miniconda
 
-To install Python and the necessary scientific libraries, we will use a free environment management system called **conda**. The conda management system allows you to install, run, and update Python packages while ensuring compatibility between different package versions on your machine. It also allows you to efficiently manage Python environments, which are essentially independent Python installations. This capability enables you to have multiple versions of Python or scientific packages installed on your computer at the same time. This is useful, for example, to test a script on different versions of Python and any other Python library, or to keep separate different scientific libraries that may work with different Python versions, etc.
+We will use a free environment management system called **conda** to install Python and the necessary scientific libraries for the course. The conda management system allows to install, run, and update Python packages while ensuring compatibility between different package versions on your machine. It also allows to efficiently manage Python environments, which are essentially independent Python installations. More details on this later.
 
-- [Install Python and conda using miniconda](#install-python-and-conda-using-miniconda)
-- [Managing Python packages (install, remove, update, clean)](#managing-python-packages--install--remove--update--clean-)
-- [More on conda environments](#more-on-conda-environments)
-  * [Create an environment](#create-an-environment)
-  * [Using an environment.ylm file](#using-an-environmentylm-file)
+## Install Python, Python scientific libraries, and Jupyter Lab using Miniconda
 
-## Install Python, scientific libraries, and Jupyter Lab using Miniconda
-
-For this course, we will install Miniconda which allows us to manage Python packages through the console with a minimal installation (don't be scared, it's simpler than it sounds).
+For this course, we will use Miniconda which allows us to manage Python packages through a console with a minimal installation (don't be scared, it's simpler than it sounds).
 
 1. Go to https://docs.conda.io/projects/miniconda/en/latest/ and download the latest version of miniconda for your operating system.
 
 2. Install Miniconda following the instructions.
 
 > [!NOTE]
-> An alternative is to download and install the [Anaconda Python distribution](https://docs.anaconda.com/free/anaconda/install/) that contains all the scientific packages needed for the course and many more (> 5 Gb of disk space). Please note that during the course we won't be using most of the scientific libraries that come with the Anaconda distribution (e.g. machine learning libraries, etc.), so we recommend using Miniconda instead.
+> An alternative is to download and install the [Anaconda Python distribution](https://docs.anaconda.com/free/anaconda/install/) that contains more than 250 scientific packages (> 5 Gb of disk space) including those needed for the course. Since during the course we won't be using most of the scientific libraries that come with the default Anaconda distribution (e.g. machine learning libraries, etc.), we recommend using Miniconda instead.
 
-3. Open the **Anaconda Prompt** and a console will pop up. You will see something like this (the path may vary depending on the file system of your operating system)
+3. Open the **Anaconda Prompt** and a console will pop up. You will see something like the line below (the path may vary depending on the file system of your operating system)
 
    ```
    (base) C:\Users\Marco>
@@ -28,14 +22,14 @@ For this course, we will install Miniconda which allows us to manage Python pack
 4. First, make sure you have the latest version of **conda** installed. To do this, type the following command:
 
    ```
-   >conda update conda
+   > conda update conda
    ```
    and update if necessary (👉 tip: do this often). 
 
-5. If you have been paying attention, you will see that the current line in the console says "base" in parentheses. This means that you are in a Python environment called "base". A wise strategy is to not install anything in this environment other than the standard Python libraries that have already been added during the Miniconda installation process. If you are curious, you can see which libraries these are by entering the command ``conda list``. Our strategy will be to create a new Python environment, which we will call "course", and install there all the libraries that we will use during the course. To do this, we will enter the following command:
+5. If you have been paying attention, you will see that the current line in the console says "base" in parentheses. This means that you are in a Python environment called "base". A wise strategy is to not install anything in this environment other than the standard Python libraries that have already been added during the Miniconda installation process. If you are curious, you can see which libraries these are by entering the command ``conda list``. Our strategy here will be to create a new Python environment  called "course" and install there all the scientific libraries that we will use during the course. To do this, we will enter the following command:
 
    ```
-   >conda create --name course python
+   > conda create --name course python
    ```
 
 6. Once finished, use the command ``conda env list`` and you will see two environments listed, "base" and "course", and an asterisk indicating that "base" is the currently active environment. To install the Python libraries needed in the "course" environment, we need to activate it first, so we type ``activate course``. Now you will see the word "course" in parentheses, indicating that "course" is now the active environment.
@@ -48,30 +42,28 @@ For this course, we will install Miniconda which allows us to manage Python pack
 
    and say yes to all. Conda will install the chosen libraries/packages and all the necessary dependencies. Once finished, you're done.
 
-8. Now you can start Jupyter lab by typing ``jupyter lab`` in the console and it will open the application in your default browser. We will see later how to work with Jupyter lab. The most important thing is that the application is running.
+8. Now you can start Jupyter Lab by typing ``jupyter lab`` in the console and it will open the application in your default browser. We will see later how to work with Jupyter Notebooks in Jupyter Lab. The most important thing is that the application runs.
 
-9. Once the above installation process is complete, we will follow the same procedure to start Jupyter Lab from scratch:
+9. Once the above installation process is complete, we will follow the same procedure to work with Jupyter notebooks during the course:
 	- Open the Anaconda Prompt (miniconda)
 	- activate the environment "course" using ``activate course``
 	- launch Jupyter lab using ``jupyter lab``
 	
 
-We will learn how to use Jupyter Lab during the course.
-
-
+We will learn how to use Jupyter Lab properly during the course.
 
 > [!TIP]
-> **Using a dedicated Jupyter Notebook application**
+> **Using a dedicated application to work with Jupyter notebooks**
 >
-> If you prefer to use a dedicated application instead of opening jupyter notebooks in your default browser, there are several alternatives. Here we will mention two:
+> If you prefer to use a dedicated application instead of opening Jupyter notebooks in your default browser, there are several alternatives. Here we will mention two free alternatives:
 >
 > - **Visual Studio Code** (a.k.a. vscode):  https://code.visualstudio.com/
 >
-> This is a free code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via extensions. As an advantage over Jupyter Lab, it has a variable browser by default. More detailed instructions on how to use jupyter notebooks in vscode can be found at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+> This is a free code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via extensions. As an advantage over vanilla Jupyter Lab, it has a handy variable browser. More detailed instructions on how to use Jupyter notebooks in vscode at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
 >
 > - **JupyterLab desktop**: https://github.com/jupyterlab/jupyterlab-desktop/releases
 >
-> This is a cross-platform desktop application for JupyterLab. You can find the user guide at the following link https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md
+> This is a cross-platform desktop application for Jupyter Lab. It is exactly the same application that opens in the browser, but in an encapsulated application. You can find the user guide at the following link https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md
 
 
 ## Managing Python packages (install, remove, update, clean)
@@ -80,31 +72,33 @@ The following are the basic commands for installing, removing and and keep your 
 
 ```
 list all Python packages and the versions installed in a specific environment:
->conda list
+> conda list
 
 install a new package in a specific environment:
->conda install <name(s) of the package(s)>
+> conda install <name(s) of the package(s)>
 
 uninstall a package
->conda remove <name of the package>
+> conda remove <name of the package>
 
 update a specific package
->conda update <name of the package>
+> conda update <name of the package>
 
 update all packages in the environment ensuring compatibility
->conda update --all
+> conda update --all
 
 clean all outdated packages (by default conda does not delete
 previous versions of packages/libraries when upgrading).
->conda clean --all
+> conda clean --all
 ```
 
 
 
 
-## More on conda environments
+## More on conda/Python environments
 
 TODO
+
+Environments enables you to have multiple versions of Python or scientific packages installed on your computer at the same time. This is useful, for example, to test a script on different versions of Python and any other Python library, or to keep separate different scientific libraries that may work with different Python versions, etc.
 
 ```
 list all existing environments
