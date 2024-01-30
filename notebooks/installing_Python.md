@@ -12,7 +12,7 @@ To install Python and the necessary scientific libraries, we will use a free env
 
 For this course, we will install Miniconda which allows us to manage Python packages through the console with a minimal installation (don't be scared, it's simpler than it sounds).
 
-1. Go to https://docs.conda.io/en/latest/miniconda.html and download the latest version of miniconda for your operating system.
+1. Go to https://docs.conda.io/projects/miniconda/en/latest/ and download the latest version of miniconda for your operating system.
 
 2. Install miniconda following the instructions.
 
