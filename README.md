@@ -2,9 +2,9 @@
 
 ![logos](img/logos.png)
 
-_Brought to you by [Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) - This website was last modified: 2024-01-30_
+_Brought to you by [Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) - This website was last modified: 2024-02-14_
 
-This is an introductory course to the Python programming language for data analysis using examples from the earth sciences. This course aims to give an overview (breadth rather than depth) of the Python programming language and the main scientific analysis libraries to start using it in your workflow and add a new free scientific analysis tools to your portfolio. The principles of the course are as follows:
+This is an introductory course to the Python programming language for data analysis using examples from the earth sciences. This course aims to give an overview (breadth rather than depth) of the Python programming language and the main scientific libraries so that you can start using it in your workflow and add a new free scientific analysis tool to your portfolio. The principles of the course are:
 
 - establishing a solid language foundation 
 
@@ -14,7 +14,7 @@ This is an introductory course to the Python programming language for data analy
 
   
 > [!NOTE]
-> At the moment, this repository contains the unfinished walkthrough notebooks that guide the course but without detailed explanations (i.e. slides) or solutions to the exercises. The course is free and licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](http://creativecommons.org/licenses/by-nc-sa/4.0/). Although they do not contain the full course, the walkthrough notebooks are self-explanatory, so anyone can use them to learn about the subject at their own pace. Please, do not post exercise solutions to any public forum or publicly-accessible software repository
+> At the moment, this repository contains the unfinished walkthrough notebooks that guide the course but without detailed explanations (i.e. slides) or solutions to the exercises. The course is free and licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](http://creativecommons.org/licenses/by-nc-sa/4.0/). Although they do not contain the full course, the walkthrough notebooks are self-explanatory, so anyone can use them to learn about the subject at their own pace. Please do not post solutions to the exercises in any public forum or publicly accessible software repository.
 
 
 
@@ -27,7 +27,7 @@ This is an introductory course to the Python programming language for data analy
 - [Numpy ("numerical Python") overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Numpy_walkthrough.ipynb) (in development)
 - [Pandas overview](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Pandas_walkthrough.ipynb) (in development)
 - [Scipy ("scientific Python") examples](https://github.com/marcoalopez/Python_course/blob/main/notebooks/Scipy.ipynb) (outlined)
-- [Object-oriented Python for sciences: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (outlined)
+- [Object-oriented Python in science: the basics](https://github.com/marcoalopez/Python_course/blob/main/notebooks/OOP4science_walkthrough.ipynb) (outlined)
 
 
 
@@ -41,13 +41,13 @@ The course assumes no previous knowledge of the Python or any other programming 
 
 #### What is this course not about?
 
-This is not a Python course on image analysis, geochemistry, machine learning or any other specific topic that you can think of. Although you will find examples of different topics, the course is aimed at giving an overview of the language and the Python scientific ecosystem so that you can start using it and go deeper into the topic you want. Nor is it a course where you will learn all the details and machinery behind the Python language. Python is simply the programming tool of choice for data analysis because it is free, easy to learn, and a great tool to introduce people to the world of scientific programming.
+This is not a Python course on image analysis, geochemistry, machine learning or any other specific topic that you can think of. Although you will find examples of different topics, the course is aimed at giving an overview of the language and the Python scientific ecosystem so that you can start using it and go deeper into the topic you want. Nor is it a course where you will learn all the details and machinery behind the Python language (bottom-down approach). Python is simply the programming tool of choice for data analysis because it is free, easy to learn, and a great tool to introduce people to the world of scientific programming.
 
 
 
 ## Author
 
-[Marco A. Lopez-Sanchez](https://marcoalopez.github.io/) is a researcher in the Department of Geology at the University of Oviedo with expertise in the analysis of the microstructure and texture (CPO) of solid materials. He has a broad experience in programming and code development for data analysis (https://github.com/marcoalopez). His main line of research is the study of the links between the mechanical properties (elastic, plastic and/or brittle) of rocks and their mineral composition, microstructure and crystallographic orientation of their components and seismic modelling (elastic properties) of rocks using averaging schemes and reconstruction of the microstructure and texture.
+I am Marco A. Lopez-Sanchez, a researcher with expertise in the analysis of the microstructure and texture (CPO) of solid materials. I have broad experience in programming and code development for data analysis (https://github.com/marcoalopez). I started this project for a mixture of fun, preaching open science and scientific programming, and learning. I live and work in Oviedo, Spain. All there is to know about me can be found at https://marcoalopez.github.io/
 
 
 
@@ -61,10 +61,6 @@ The GitHub website hosting the project provides several options (you will need a
   - Engage with the developers (still just me).
 
 Besides, if you want to contribute to the project, you might want to glimpse at the [code of conduct](https://github.com/marcoalopez/Python_course/blob/main/CODE_OF_CONDUCT.md) (TLDR: be nice to others 😉).  
-
-## Acknowledgements
-
-TODO
 
 
 
