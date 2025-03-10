@@ -115,26 +115,28 @@ to create a new environment using conda the general procedure is as follows (in 
 
 some examples below
 
-```
+```markdown
 create an environment named "main" with the last version of Python supported by conda
->conda create -n main python
+>conda create --name main python
 
 create an environment with a specific version of Python
->conda create --n new_env python=3.8.1
+>conda create --name new_env python=3.8.1
 
-create an environment named "SCIENV" with the libraries numpy, scipy, matplolib and jupyterlab (conda will include all the necessary dependencies)
->conda create --n SCIENV numpy scipy matplolib jupyterlab
+create an environment named "SCIENV" with the libraries numpy, scipy, matplolib and jupyterlab (conda will take care of including all the necessary dependencies)
+>conda create --name SCIENV numpy scipy matplolib jupyterlab
 
 create an environment named "image" with the library scikit-image and all the neccesary dependencies
->conda create --n image scikit-image
+>conda create --name image scikit-image
 
 remove an existing environment
->conda env remove -n <ENV NAME>
+>conda env remove --name <ENV NAME>
+or
+>conda remove --name <ENV NAME> --all
 ```
 
 
 
-More info here: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+More info here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
 ### Using environment.ylm (YALM) files
 
