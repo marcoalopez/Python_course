@@ -70,7 +70,7 @@ We will learn how to use Jupyter Lab properly during the course.
 
 The following are the basic commands for installing, removing and and keep your Python libraries up to date.
 
-```
+```markdown
 list all Python packages and the versions installed in a specific environment:
 > conda list
 
@@ -128,7 +128,7 @@ create an environment named "SCIENV" with the libraries numpy, scipy, matplolib 
 create an environment named "image" with the library scikit-image and all the neccesary dependencies
 >conda create --name image scikit-image
 
-remove an existing environment
+remove an existing environment (make sure you are not in the environment you want to remove)
 >conda env remove --name <ENV NAME>
 or
 >conda remove --name <ENV NAME> --all
