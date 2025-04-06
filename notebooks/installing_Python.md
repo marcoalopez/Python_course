@@ -123,15 +123,13 @@ create an environment with a specific version of Python
 >conda create --name new_env python=3.8.1
 
 create an environment named "SCIENV" with the libraries numpy, scipy, matplolib and jupyterlab (conda will take care of including all the necessary dependencies)
->conda create --name SCIENV numpy scipy matplolib jupyterlab
+>conda create --name SCIENV numpy scipy matplotlib jupyterlab
 
 create an environment named "image" with the library scikit-image and all the neccesary dependencies
 >conda create --name image scikit-image
 
 remove an existing environment (make sure you are not in the environment you want to remove)
 >conda env remove --name <ENV NAME>
-or
->conda remove --name <ENV NAME> --all
 ```
 
 
@@ -154,12 +152,12 @@ This will create a new conda environment called with the name defined within the
 
 To create an ``environment.ylm`` file from a specific conda environment do as follows
 
-```
->conda activate my_env
+```markdown
+>conda activate <ENV NAME>
 >conda env export > environment.yml
 ```
 
 This command will export the list of packages and their versions that are installed in the current active conda environment so that you can quickly share it with anyone.
 
 > [!TIP]
-> Sharing Conda environments with other researchers facilitates reproducibility in research. So we encourage you to create and share environment.yml files in which you have conducted the data analysis every time you make a scientific publication.
+> Sharing conda environments with other researchers facilitates reproducibility in research. So we encourage you to create and share environment.yml files in which you have conducted the data analysis every time you make a scientific publication.
