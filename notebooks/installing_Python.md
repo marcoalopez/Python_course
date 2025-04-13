@@ -2,7 +2,9 @@
 
 We will use a free environment management system called **conda** to install Python and the necessary scientific libraries for the course. The conda management system allows to install, run, and update Python packages while ensuring compatibility between different package versions on your machine. It also allows to efficiently manage Python environments, which are essentially independent Python installations. More details on this later.
 
-## Install Python, Python scientific libraries, and Jupyter Lab using Miniconda
+[TOC]
+
+## 1. Install Python, scientific libraries, and Jupyter Lab using Miniconda
 
 For this course, we will use Miniconda which allows us to manage Python packages through a console with a minimal installation (don't be scared, it's simpler than it sounds).
 
@@ -66,7 +68,7 @@ We will learn how to use Jupyter Lab properly during the course.
 > This is a cross-platform desktop application for Jupyter Lab. It is exactly the same application that opens in the browser, but in an encapsulated application. You can find the user guide at the following link https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md
 
 
-## Managing Python packages (install, remove, update, clean)
+## 2. Managing Python packages: install, remove, update, and clean.
 
 The following are the basic commands for installing, removing and and keep your Python libraries up to date.
 
@@ -94,20 +96,20 @@ conda clean --all
 
 
 
-## More on conda/Python environments
+## 3. Conda/Python environments: why and how
 
 Environments enables you to have multiple versions of Python or scientific packages installed on your computer at the same time. This is useful, for example, to test a script on different versions of Python and any other Python library, or to keep separate different scientific libraries that may work with different Python versions, etc.
 
-```
-list all existing environments
->conda env list
+```markdown
+# list all existing environments
+conda env list
 ```
 
-### Create  and remove an environment
+### 3.1 Create  and remove an environment
 
 to create a new environment using conda the general procedure is as follows (in the anaconda prompt)
 
-``>conda create --name <name of my env> <list of packages>``
+``conda create --name <ENV NAME> <list of packages to install>``
 
 > you can use ``-n`` instead of ``--name`` if preferred 
 
@@ -132,7 +134,7 @@ conda env remove --name <ENV NAME>
 
 More info here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
-### Adding Python packaged from other channels or via pip in conda
+### 3.2 Adding Python packages from other channels
 
 At some point, you are likely to find yourself in the situation where you want to install a Python package that is not in the official (default) conda channel, and you need to install it using pip, the standard Python installation package, or the community-driven _conda-forge_ channel. In this case, it is strongly recommended to create a new Python environment and, in particular, never use pip to install packages into the Python environments you have for general use, as this may break compatibility between different versions of the environment.
 
@@ -165,9 +167,9 @@ conda config --append channels conda-forge
 > ```
 
 
-### Using environment.ylm (YALM) files
+### 3.3 Using environment.ylm (YALM) files
 
-An ``environment.ylm`` file is used to specify the dependencies for a Python project in conjunction with the ``conda`` package manager. It is a plain text file that looks like this:
+An ``environment.ylm`` file is a YALM file used to specify the dependencies for a Python project in conjunction with the ``conda`` package manager. It is a plain text file that looks like this:
 
 ![image-20221215134600921](https://github.com/marcoalopez/Python_course/blob/main/img/image-20221215134600921.png?raw=true)
 
@@ -179,15 +181,17 @@ To create a conda environment using an ``environment.ylm`` file from the command
 
 This will create a new conda environment called with the name defined within the ``environment.ylm`` file. 
 
-To create an ``environment.ylm`` file from a specific conda environment do as follows
+On the other hand, if you want to create an ``environment.ylm`` file from your own conda environment, so that anyone can replicate it on their machine, do the following:
 
 ```markdown
+# activate the specific environment
 conda activate <environment name>
 
+# create the YALM file
 conda env export > environment.yml
 ```
 
-This command will export the list of packages and their versions that are installed in the current active conda environment so that you can quickly share it with anyone.
+This command exports the list of packages and their versions installed in the currently active conda environment, so that you can quickly share it with anyone.
 
 > [!TIP]
-> Sharing conda environments with other researchers facilitates reproducibility in research. So we encourage you to create and share environment.yml files in which you have conducted the data analysis every time you make a scientific publication.
+> Sharing conda environments with other researchers facilitates reproducibility of research. We therefore encourage you to create and share the environment.yml files in which you have performed the data analysis each time you publish a scientific paper.
