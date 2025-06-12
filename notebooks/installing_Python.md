@@ -107,10 +107,11 @@ conda env list
 
 ### 3.1 Create  and remove an environment
 
-to create a new environment using conda the general procedure is as follows (in the anaconda prompt)
+To create a new environment using Conda, the general procedure is as follows in the anaconda prompt:
 
 ``conda create --name <ENV NAME> <list of packages to install>``
 
+> [!TIP]
 > you can use ``-n`` instead of ``--name`` if preferred 
 
 some examples below
@@ -122,7 +123,8 @@ conda create --name main python
 # create an environment with a specific version of Python
 conda create --name new_env python=3.8.1
 
-# create an environment named "SCIENV" with the libraries numpy, scipy, matplolib and jupyterlab (conda will take care of including all the necessary dependencies)
+# create an environment named "SCIENV" with numpy, scipy, matplolib and jupyterlab 
+# Note: conda will ensure that all other necessary dependencies be included.
 conda create --name SCIENV numpy scipy matplotlib jupyterlab
 
 # create an environment named "image" with the library scikit-image and all the neccesary dependencies
@@ -136,24 +138,22 @@ More info here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/
 
 ### 3.2 Adding Python packages from other channels
 
-At some point, you are likely to find yourself in the situation where you want to install a Python package that is not in the official (default) conda channel, and you need to install it using pip, the standard Python installation package, or the community-driven _conda-forge_ channel. In this case, it is strongly recommended to create a new Python environment and, in particular, never use pip to install packages into the Python environments you have for general use, as this may break compatibility between different versions of the environment.
+At some point, you may find that you want to install a Python package that is not available in the official conda channel. In this case, you will need to install it using pip, the standard Python installation package, or the community-driven conda-forge channel. In this case, it is strongly recommended that you create a new Python environment. In particular, you should never use pip to install packages into the Python environments that you use for general purposes, as this may cause compatibility issues between different versions of the environment.
 
 #### Case 1: Python package installed using pip
 
-Create a new Python environment and install the package and any necessary dependencies. Follow the developer's installation instructions.
+Create a new Python environment and install the package, along with any necessary dependencies. Follow the developer's installation instructions.
 
 #### Case 2: the Python package is in the conda-forge channel
 
-To install packages from the _conda-forge_ community channel, you must first activate it (see instructions below). Once this is done, create your new Python environment and install all the necessary libraries using conda.
-
-To add the _conda-forge_ channel use:
+To install packages from the _conda-forge_ community channel, you must first activate it (see the instructions below). Once this is done, create your new Python environment and install all the necessary libraries using Conda. To add the _conda-forge_ channel use the following prompt:
 
 ```markdown
 conda config --append channels conda-forge
 ```
 
 > [!WARNING]
-> In most tutorials you can find on the internet you will find the following line to enable the conda-forge channel: ``conda config --add channels conda-forge``. **We advise you not to do this**. This will make conda-forge the priority channel in your Python installation. Your anaconda's default channel will have a lower priority, and some of your packages will start upgrading to conda-forge, affecting other environments as well. Using ``--append`` instead of ``--add`` will keep your default conda channel high in priority, and package versions will be searched on your default before going to conda-forge. If you have already made a mess of it, you can use the following lines:
+> Most online tutorials will include the following line to enable the _conda-forge_ channel: ``conda config --add channels conda-forge``. **We advise you not to do this**. This prioritises the conda-forge channel over Anaconda's default channel in your Python installation. As a result, some of your packages will start upgrading to _conda-forge_ versions, which will affect other Python environments as well. Using ``--append`` instead of ``--add`` keeps the default conda channel at the top of the priority channels, meaning that package versions will be searched on the default channel before going to _conda-forge_. If you have made a mess or are unsure about the channel priorities in your installation, you can use the following prompts:
 >
 > ```markdown
 > # show channels
@@ -162,26 +162,25 @@ conda config --append channels conda-forge
 > # describe channel priority
 > conda config --describe channel_priority
 > 
-> # remove conda-forge
+> # Remove Conda Forge if it is the priority channel
 > conda config --remove channels conda-forge
+> 
+> # reinstall it (if needed)
+> conda config --append channels conda-forge
 > ```
 
 
 ### 3.3 Using environment.ylm (YALM) files
 
-An ``environment.ylm`` file is a YALM file used to specify the dependencies for a Python project in conjunction with the ``conda`` package manager. It is a plain text file that looks like this:
+An ``environment.ylm`` file is a YALM file  that specifies the dependencies for a Python project when used with the conda package manager. A YALM file is simply a plain text file that looks like this:
 
 ![image-20221215134600921](https://github.com/marcoalopez/Python_course/blob/main/img/image-20221215134600921.png?raw=true)
 
-These files are a useful way to share Python environments and ensure, for example, that anyone else using your code does so in the same environment as you regardless of the operating system or machine where the code runs. 
-
-To create a conda environment using an ``environment.ylm`` file from the command lines use (if you are in the folder containing the ``environment.ylm`` otherwise you will have to specify the path)
+These files are a useful way to share Python environments and ensure that anyone else using your code does so in the same environment as you regardless of the operating system or machine where the code runs.  To create a Conda environment using an ``environment.ylm`` file from the command line use (if you are in the folder containing the ``environment.ylm`` otherwise you will have to specify the path)
 
 ``conda env create -f environment.yml``
 
-This will create a new conda environment called with the name defined within the ``environment.ylm`` file. 
-
-On the other hand, if you want to create an ``environment.ylm`` file from your own conda environment, so that anyone can replicate it on their machine, do the following:
+This will create a new Conda environment called with the name defined within the ``environment.ylm`` file. If you want to create an ``environment.ylm`` file from a Conda environment use the following prompts:
 
 ```markdown
 # activate the specific environment
@@ -191,7 +190,7 @@ conda activate <environment name>
 conda env export > environment.yml
 ```
 
-This command exports the list of packages and their versions installed in the currently active conda environment, so that you can quickly share it with anyone.
+This command exports the list of packages and their versions installed in the currently active Conda environment, so that you can quickly share it with anyone.
 
 > [!TIP]
-> Sharing conda environments with other researchers facilitates reproducibility of research. We therefore encourage you to create and share the environment.yml files in which you have performed the data analysis each time you publish a scientific paper.
+> Sharing Conda environments with other researchers makes research more reproducible. We encourage researchers to create and share ``environment.yml`` files for each piece of data analysis they perform when publishing a scientific paper.
