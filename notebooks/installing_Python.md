@@ -1,78 +1,139 @@
-# How to install Python for Data Science using Miniconda
+# Installing Python for Scientific Research Using Miniconda
 
-We will use a free environment management system called **conda** to install Python and the necessary scientific libraries for the course. The conda management system allows to install, run, and update Python packages while ensuring compatibility between different package versions on your machine. It also allows to efficiently manage Python environments, which are essentially independent Python installations. More details on this later.
+This tutorial guides you through installing Python using Miniconda, a lightweight Python installer. It is intended for undergraduate and PhD students with little or no experience using Python. We'll focus on setting up a clean, reproducible environment suitable for data analysis and scientific computing.
 
 [TOC]
 
-## 1. Install Python, scientific libraries, and Jupyter Lab using Miniconda
+## 1. Why Miniconda?
 
-For this course, we will use Miniconda which allows us to manage Python packages through a console with a minimal installation (don't be scared, it's simpler than it sounds).
+Python is widely used in scientific research. The Conda ecosystem, which includes Anaconda and Miniconda, is a package and environment manager that simplifies the installation and management of Python libraries. It ensures compatibility between packages and allows you to create isolated environments for different projects. This prevents conflicts and keeps your system clean.
 
-1. Go to https://docs.conda.io/projects/miniconda/en/latest/ and download the latest version of miniconda for your operating system.
+Miniconda is a minimal installer for Conda. It includes the Conda package manager and Python but leaves out the hundreds of scientific libraries that come bundled with the Anaconda distribution. This makes Miniconda more lightweight and customizable.
 
-2. Install Miniconda following the instructions.
+## 2. Installing Miniconda
+
+1. Go to the [Miniconda installation page](https://docs.conda.io/projects/miniconda/en/latest/)
+2. Download the installer for your operating system (Windows, macOS, or Linux).
+
+#### On windows
+
+3. Run the downloaded `.exe` file.
+4. Follow the installation prompts. Use the default settings unless you have specific needs.
+
+#### On macOS or Linux
+
+3. Open a terminal.
+4. Run the downloaded installer script. For example:
+
+```bash
+bash Miniconda3-latest-MacOSX-x86_64.sh
+```
+
+5. Follow the on-screen instructions.
 
 > [!NOTE]
-> An alternative is to download and install the [Anaconda Python distribution](https://docs.anaconda.com/free/anaconda/install/) that contains more than 250 scientific packages (> 5 Gb of disk space) including those needed for the course. Since during the course we won't be using most of the scientific libraries that come with the default Anaconda distribution (e.g. machine learning libraries, etc.), we recommend using Miniconda instead.
+> You can also install the full Anaconda distribution, which includes over 250 scientific packages. However, it requires more than 5 GB of disk space. For this course, Miniconda is recommended because it is lightweight and sufficient for our needs.
 
-3. Open the **Anaconda Prompt** and a console will pop up. You will see something like the line below (the path may vary depending on the file system of your operating system)
 
-   ```
-   (base) C:\Users\Marco>
-   ```
 
-4. First, make sure you have the latest version of **conda** installed. To do this, type the following command:
+## 3. Create a Conda Environment for the Course
 
-   ```
-   conda update conda
-   ```
-   and update if necessary (👉 tip: do this often). 
+After installing Miniconda, open the **Anaconda Prompt** (on Windows) or a terminal (on macOS/Linux). You should see something like (the path may vary depending on the file system of your operating system):
 
-5. If you have been paying attention, you will see that the current line in the console says "base" in parentheses. This means that you are in a Python environment called "base". A wise strategy is to not install anything in this environment other than the standard Python libraries that have already been added during the Miniconda installation process. If you are curious, you can see which libraries these are by entering the command ``conda list``. Our strategy here will be to create a new Python environment  called "course" and install there all the scientific libraries that we will use during the course. To do this, we will enter the following command:
+```
+(base) C:\Users\Marco>
+```
 
-   ```
-   conda create --name course python
-   ```
+The `(base)` prefix indicates that the base environment is active. Avoid installing packages in the `base` environment. Instead, we will create a dedicated environment for the course.
 
-6. Once finished, use the command ``conda env list`` and you will see two environments listed, "base" and "course", and an asterisk indicating that "base" is the currently active environment. To install the Python libraries needed in the "course" environment, we need to activate it first, so we type ``activate course``. Now you will see the word "course" in parentheses, indicating that "course" is now the active environment.
+### Step 1: Update Conda
 
-7. Next, we proceed to install the libraries needed for the course. Instead of doing it one by one, we will do it in a single line as follows (you can paste and copy the command directly into your console)
+Before proceeding, update Conda using:
 
-   ```
-   conda install numpy scipy pandas matplotlib jupyterlab
-   ```
+```
+conda update conda
+```
 
-   and say yes to all. Conda will install the chosen libraries/packages and all the necessary dependencies. Once finished, you're done.
+> [!TIP]
+> Run this command regularly to keep Conda up to date and keep your `base` environment clean.
 
-8. Now you can start Jupyter Lab by typing ``jupyter lab`` in the console and it will open the application in your default browser. We will see later how to work with Jupyter Notebooks in Jupyter Lab. The most important thing is that the application runs.
+### Step 2: Create a Conda Environment
 
-9. Once the above installation process is complete, we will follow the same procedure to work with Jupyter notebooks during the course:
-	- Open the Anaconda Prompt (miniconda)
-	- activate the environment "course" using ``activate course``
-	- launch Jupyter lab using ``jupyter lab``
-	
+Create a new environment named `course` with the latest version of Python in the Conda repository:
+
+```bash
+conda create --name course python
+```
+
+Once created, list all environments:
+
+```bash
+conda env list
+```
+
+You should see both `base` and `course` listed. The asterisk `*` indicates the currently active environment.
+
+### Step 3: Activate the Environment
+
+Activate the `course` environment:
+
+```bash
+conda activate course
+```
+
+The prompt will now show `(course)` instead of `(base)`.
+
+### Step 5: Install Scientific Libraries
+
+Install the libraries needed for the course in one step (instead one by one):
+
+```bash
+conda install numpy scipy pandas matplotlib jupyterlab
+```
+
+Conda will resolve dependencies and install the packages.
+
+### Step 6: Launch Jupyter Lab
+
+Start Jupyter Lab:
+
+```bash
+jupyter lab
+```
+
+This will open Jupyter Lab in your default web browser. You’ll use this interface to write and run Python code in notebooks during the course.
+
+### Summary
+
+Once the above installation process is complete, we will follow the same procedure to work with Jupyter notebooks during the course:
+  - Open the Anaconda Prompt (miniconda)
+  - activate the environment "course" using ``activate course``
+  - launch Jupyter lab using ``jupyter lab``
 
 We will learn how to use Jupyter Lab properly during the course.
+
+
 
 > [!TIP]
 > **Using a dedicated application to work with Jupyter notebooks**
 >
-> If you prefer to use a dedicated application instead of opening Jupyter notebooks in your default browser, there are several alternatives. Here we will mention two free alternatives:
+> If you prefer to use a dedicated application instead of opening Jupyter notebooks in your default browser, there are several alternatives. Here I mention two free alternatives:
 >
 > - **Visual Studio Code** (a.k.a. vscode):  https://code.visualstudio.com/
 >
-> This is a free code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via extensions. As an advantage over vanilla Jupyter Lab, it has a handy variable browser. More detailed instructions on how to use Jupyter notebooks in vscode at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+> This is a free code editor that can be used with a variety of programming languages including Python and supports Jupyter notebooks via extensions. As an advantage over vanilla Jupyter Lab, it has a handy variable browser and more advanced features. More detailed instructions on how to use Jupyter notebooks in vscode at the following link https://code.visualstudio.com/docs/datascience/jupyter-notebooks
 >
 > - **JupyterLab desktop**: https://github.com/jupyterlab/jupyterlab-desktop/releases
 >
 > This is a cross-platform desktop application for Jupyter Lab. It is exactly the same application that opens in the browser, but in an encapsulated application. You can find the user guide at the following link https://github.com/jupyterlab/jupyterlab-desktop/blob/master/user-guide.md
 
 
-## 2. Managing Python packages: install, remove, update, and clean.
 
-The following are the basic commands for installing, removing and and keep your Python libraries up to date.
+## 4. Managing Conda Environments
 
-```markdown
+### 4.1 Listing, installing, removing and updating packages
+
+```bash
 # list all Python packages and the versions installed in a specific environment:
 conda list
 
@@ -88,109 +149,133 @@ conda update <name of the package>
 # update all packages in the environment ensuring compatibility
 conda update --all
 
-# clean all outdated packages (by default conda does not delete
+# clean all outdated packages (by default Conda does not delete
 # previous versions of packages/libraries when upgrading).
 conda clean --all
 ```
 
 
 
+### 4.2 Managing environments
 
-## 3. Conda/Python environments: why and how
+Conda environments let you isolate different sets of packages and Python versions. This is useful for testing, reproducibility, and avoiding conflicts. For example, you can use them to test a script on different versions of Python, or to maintain separate scientific libraries that may be compatible with different versions of Python.
 
-Environments enables you to have multiple versions of Python or scientific packages installed on your computer at the same time. This is useful, for example, to test a script on different versions of Python and any other Python library, or to keep separate different scientific libraries that may work with different Python versions, etc.
+```bash
+# Create a new environment with the latest Python version
+conda create --name myenv python
 
-```markdown
-# list all existing environments
+# Create an environment with a specific Python version
+conda create --name myenv python=3.11
+
+# Create an environment with specific packages
+conda create --name scienv numpy scipy matplotlib jupyterlab
+
+# List all environments
 conda env list
-```
 
-### 3.1 Create  and remove an environment
-
-To create a new environment using Conda, the general procedure is as follows in the anaconda prompt:
-
-``conda create --name <ENV NAME> <list of packages to install>``
-
-> [!TIP]
-> you can use ``-n`` instead of ``--name`` if preferred 
-
-some examples below
-
-```markdown
-# create an environment named "main" with the last version of Python supported by conda
-conda create --name main python
-
-# create an environment with a specific version of Python
-conda create --name new_env python=3.8.1
-
-# create an environment named "SCIENV" with numpy, scipy, matplolib and jupyterlab 
-# Note: conda will ensure that all other necessary dependencies be included.
-conda create --name SCIENV numpy scipy matplotlib jupyterlab
-
-# create an environment named "image" with the library scikit-image and all the neccesary dependencies
-conda create --name image scikit-image
-
-# remove an existing environment (make sure you are not in the environment you want to remove)
-conda env remove --name <ENV NAME>
+# Remove an environment (make sure you are not in the environment you want to remove)
+conda env remove --name myenv
 ```
 
 More info here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
-### 3.2 Adding Python packages from other channels
+> [!TIP]
+> You can use `-n` instead of `--name` for brevity.
 
-At some point, you may find that you want to install a Python package that is not available in the official conda channel. In this case, you will need to install it using pip, the standard Python installation package, or the community-driven conda-forge channel. In this case, it is strongly recommended that you create a new Python environment. In particular, you should never use pip to install packages into the Python environments that you use for general purposes, as this may cause compatibility issues between different versions of the environment.
 
-#### Case 1: Python package installed using pip
 
-Create a new Python environment and install the package, along with any necessary dependencies. Follow the developer's installation instructions.
+### 4.3 Using Packages from Other Channels
 
-#### Case 2: the Python package is in the conda-forge channel
+Sometimes, a package is not available in the default Conda channel. This is usually done using `pip`, which is the general Python’s package installer or the channel `conda-forge`, a ommunity-maintained collection of Conda packages.
 
-To install packages from the _conda-forge_ community channel, you must first activate it (see the instructions below). Once this is done, create your new Python environment and install all the necessary libraries using Conda. To add the _conda-forge_ channel use the following prompt:
+#### Case 1: using pip (Python’s package installer)
 
-```markdown
+Use `pip` only in isolated environments to avoid compatibility issues:
+
+```bash
+# Activate a new environment
+conda create --name customenv python
+conda activate customenv
+
+# Install using pip
+pip install <package-name>
+```
+
+> [!CAUTION]
+> you should never use pip to install packages into the Python environments that you use for general purposes, as this may cause compatibility issues between different versions of the environment.
+
+#### Case 2: using conda-forge (Community-maintained channel)
+
+To install packages from the _conda-forge_ community channel, you must first activate it:
+
+```bash
+# Append conda-forge to the list of channels (recommended)
 conda config --append channels conda-forge
 ```
 
-> [!WARNING]
-> Most online tutorials will include the following line to enable the _conda-forge_ channel: ``conda config --add channels conda-forge``. **We advise you not to do this**. This prioritises the conda-forge channel over Anaconda's default channel in your Python installation. As a result, some of your packages will start upgrading to _conda-forge_ versions, which will affect other Python environments as well. Using ``--append`` instead of ``--add`` keeps the default conda channel at the top of the priority channels, meaning that package versions will be searched on the default channel before going to _conda-forge_. If you have made a mess or are unsure about the channel priorities in your installation, you can use the following prompts:
->
-> ```markdown
-> # show channels
-> conda config --show channels
-> 
-> # describe channel priority
-> conda config --describe channel_priority
-> 
-> # Remove Conda Forge if it is the priority channel
-> conda config --remove channels conda-forge
-> 
-> # reinstall it (if needed)
-> conda config --append channels conda-forge
-> ```
+> [!CAUTION]
+> Most online tutorials will include the following line to enable the _conda-forge_ channel: ``conda config --add channels conda-forge``. **We advise you not to do this**. Using `-add` gives `conda-forge` higher priority than the default channel, which can lead to unexpected upgrades and conflicts. Always use ``--append``.
+
+To check or reset channel priorities:
+
+```bash
+# Show current channels
+conda config --show channels
+
+# Describe channel priority
+conda config --describe channel_priority
+
+# Remove conda-forge if needed
+conda config --remove channels conda-forge
+
+# Re-add it safely
+conda config --append channels conda-forge
+```
 
 
-### 3.3 Using environment.ylm (YALM) files
+### 4.4 Sharing and Reproducing Environments with `environment.yml`
 
-An ``environment.ylm`` file is a YALM file  that specifies the dependencies for a Python project when used with the conda package manager. A YALM file is simply a plain text file that looks like this:
+A Conda environment can be saved and shared using an `environment.yml` file. This file lists all packages and their versions, making it easy to recreate the same environment on another machine or share it with collaborators. A YALM (.yml) file is simply a plain text file that looks like this:
 
 ![image-20221215134600921](https://github.com/marcoalopez/Python_course/blob/main/img/image-20221215134600921.png?raw=true)
 
-These files are a useful way to share Python environments and ensure that anyone else using your code does so in the same environment as you regardless of the operating system or machine where the code runs.  To create a Conda environment using an ``environment.ylm`` file from the command line use (if you are in the folder containing the ``environment.ylm`` otherwise you will have to specify the path)
+#### Creating an `environment.yml` File
 
-``conda env create -f environment.yml``
+To export the current environment:
 
-This will create a new Conda environment called with the name defined within the ``environment.ylm`` file. If you want to create an ``environment.ylm`` file from a Conda environment use the following prompts:
+```bash
+# Activate the environment you want to export
+conda activate myenv
 
-```markdown
-# activate the specific environment
-conda activate <environment name>
-
-# create the YALM file
+# Export the environment to a file
 conda env export > environment.yml
 ```
 
-This command exports the list of packages and their versions installed in the currently active Conda environment, so that you can quickly share it with anyone.
+This creates a file named `environment.yml` in your current directory.
+
+#### Creating an Environment from a YAML File
+
+To recreate an environment from an `environment.yml` file:
+
+```bash
+# Run this in the directory containing the file
+conda env create -f environment.yml
+```
+
+This will create a new environment with the name and packages specified in the file.
 
 > [!TIP]
-> Sharing Conda environments with other researchers makes research more reproducible. We encourage researchers to create and share ``environment.yml`` files for each piece of data analysis they perform when publishing a scientific paper.
+> Sharing `environment.yml` files with your code helps ensure that others can reproduce your results exactly. This is a best practice in scientific computing.
+
+
+
+## 5. Summary of common commands
+
+| Task                                  | Command                                 |
+| ------------------------------------- | --------------------------------------- |
+| Create a new environment              | `conda create -n myenv python=3.11`     |
+| Activate an environment               | `conda activate myenv`                  |
+| Install packages                      | `conda install numpy matplotlib pandas` |
+| Update all packages in an environment | `conda update --all`                    |
+| Launch JupyterLab                     | `jupyter lab`                           |
+| List all environments                 | `conda env list`                        |
