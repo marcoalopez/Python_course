@@ -133,7 +133,7 @@ We will learn how to use Jupyter Lab properly during the course.
 
 ### 4.1 Listing, installing, removing and updating packages
 
-```bash
+```markdown
 # list all Python packages and the versions installed in a specific environment:
 conda list
 
@@ -160,7 +160,7 @@ conda clean --all
 
 Conda environments let you isolate different sets of packages and Python versions. This is useful for testing, reproducibility, and avoiding conflicts. For example, you can use them to test a script on different versions of Python, or to maintain separate scientific libraries that may be compatible with different versions of Python.
 
-```bash
+```markdown
 # Create a new environment with the latest Python version
 conda create --name myenv python
 
@@ -190,25 +190,23 @@ Sometimes, a package is not available in the default Conda channel. This is usua
 
 #### Case 1: using pip (Python’s package installer)
 
-Use `pip` only in isolated environments to avoid compatibility issues:
-
-```bash
-# Activate a new environment
+```markdown
+# Create and activate a new environment (check the compatible Python version in the repository)
 conda create --name customenv python
 conda activate customenv
 
-# Install using pip
+# Install using pip and follow developer instructions
 pip install <package-name>
 ```
 
 > [!CAUTION]
-> you should never use pip to install packages into the Python environments that you use for general purposes, as this may cause compatibility issues between different versions of the environment.
+> You should never use pip to install packages into the Python environments that you use for general purposes, as this may cause compatibility issues between different versions of the environment. **Use `pip` only in isolated environments to avoid compatibility issues**.
 
-#### Case 2: using conda-forge (Community-maintained channel)
+#### Case 2: using conda-forge (community-maintained channel)
 
 To install packages from the _conda-forge_ community channel, you must first activate it:
 
-```bash
+```markdown
 # Append conda-forge to the list of channels (recommended)
 conda config --append channels conda-forge
 ```
@@ -216,9 +214,11 @@ conda config --append channels conda-forge
 > [!CAUTION]
 > Most online tutorials will include the following line to enable the _conda-forge_ channel: ``conda config --add channels conda-forge``. **We advise you not to do this**. Using `-add` gives `conda-forge` higher priority than the default channel, which can lead to unexpected upgrades and conflicts. Always use ``--append``.
 
+
+
 To check or reset channel priorities:
 
-```bash
+```markdown
 # Show current channels
 conda config --show channels
 
@@ -243,7 +243,7 @@ A Conda environment can be saved and shared using an `environment.yml` file. Thi
 
 To export the current environment:
 
-```bash
+```markdown
 # Activate the environment you want to export
 conda activate myenv
 
@@ -257,7 +257,7 @@ This creates a file named `environment.yml` in your current directory.
 
 To recreate an environment from an `environment.yml` file:
 
-```bash
+```markdown
 # Run this in the directory containing the file
 conda env create -f environment.yml
 ```
@@ -269,13 +269,15 @@ This will create a new environment with the name and packages specified in the f
 
 
 
-## 5. Summary of common commands
+## 5. List of common Conda commands
 
-| Task                                  | Command                                 |
-| ------------------------------------- | --------------------------------------- |
-| Create a new environment              | `conda create -n myenv python=3.11`     |
-| Activate an environment               | `conda activate myenv`                  |
-| Install packages                      | `conda install numpy matplotlib pandas` |
-| Update all packages in an environment | `conda update --all`                    |
-| Launch JupyterLab                     | `jupyter lab`                           |
-| List all environments                 | `conda env list`                        |
+| Task                                            | Command                                 |
+| ----------------------------------------------- | --------------------------------------- |
+| Create a new environment                        | `conda create -n myenv python=3.11`     |
+| Activate an environment                         | `conda activate myenv`                  |
+| List all environments                           | `conda env list`                        |
+| Install packages                                | `conda install numpy matplotlib pandas` |
+| List all packages and versions in a environment | `conda list`                            |
+| Update all packages in an environment           | `conda update --all`                    |
+| Get general info of an environment              | `conda info`                            |
+| Launch JupyterLab                               | `jupyter lab`                           |
