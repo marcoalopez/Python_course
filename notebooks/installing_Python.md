@@ -38,13 +38,13 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 
 ## 3. Create a Conda Environment for the Course
 
-After installing Miniconda, open the **Anaconda Prompt** (on Windows) or a terminal (on macOS/Linux). You should see something like (the path may vary depending on the file system of your operating system):
+After installing Miniconda, open the **Anaconda Prompt** (on Windows) or a terminal and write `conda activate`(on macOS/Linux). You should see something like (the path may vary depending on the file system of your operating system):
 
 ```
 (base) C:\Users\Marco>
 ```
 
-The `(base)` prefix indicates that the base environment is active. Avoid installing packages in the `base` environment. Instead, we will create a dedicated environment for the course.
+The `(base)` prefix indicates that the base environment is active. Avoid installing packages in the `base` environment. Instead, we will create a dedicated environment for the Python course.
 
 ### Step 1: Update Conda
 
@@ -55,7 +55,7 @@ conda update conda
 ```
 
 > [!TIP]
-> Run this command regularly to keep Conda up to date and keep your `base` environment clean.
+> Run this command regularly to keep Conda up to date.
 
 ### Step 2: Create a Conda Environment
 
