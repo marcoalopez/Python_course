@@ -22,20 +22,32 @@ Miniconda is a minimal installer for Conda. It includes the Conda package manage
 #### On macOS/Linux
 
 3. If you downloaded the `.pkg` file (Graphical installer only on macOS) run the file and follow the on-screen instructions.
-3.  If you downloaded the `.sh` file, open a terminal and run one of the following commands:
+3.  If you downloaded the `.sh` file, open a terminal and run the following commands:
 
 ```bash
 # macOS Apple silicon
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+mkdir -p ~/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
 
 # macOS Intel
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+mkdir -p ~/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
 
 # Linux x86
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
 
 # Linux ARM64
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
 ```
 
 Follow the on-screen instructions.
