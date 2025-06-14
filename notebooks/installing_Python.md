@@ -12,24 +12,37 @@ Miniconda is a minimal installer for Conda. It includes the Conda package manage
 
 ## 2. Installing Miniconda
 
-1. Go to the [Miniconda installation page](https://docs.conda.io/projects/miniconda/en/latest/)
+1. Go to the [Miniconda installation page](https://www.anaconda.com/docs/getting-started/miniconda/main) or the Miniconda repository at https://repo.anaconda.com/miniconda/
 2. Download the installer for your operating system (Windows, macOS, or Linux).
 
 #### On windows
 
-3. Run the downloaded `.exe` file.
-4. Follow the installation prompts. Use the default settings unless you have specific needs.
+3. Run the downloaded `.exe` file and follow the on-screen instructions.
 
-#### On macOS or Linux
+#### On macOS/Linux
 
-3. Open a terminal.
-4. Run the downloaded installer script. For example:
+3. If you downloaded the `.pkg` file (Graphical installer only on macOS) run the file and follow the on-screen instructions.
+3.  If you downloaded the `.sh` file, open a terminal and run one of the following commands:
 
 ```bash
-bash Miniconda3-latest-MacOSX-x86_64.sh
+# macOS Apple silicon
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+
+# macOS Intel
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+
+# Linux x86
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# Linux ARM64
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 ```
 
-5. Follow the on-screen instructions.
+Follow the on-screen instructions.
+
+If needed, more details on installing Miniconda here: https://www.anaconda.com/docs/getting-started/miniconda/install
+
+
 
 > [!NOTE]
 > You can also install the full Anaconda distribution, which includes over 250 scientific packages. However, it requires more than 5 GB of disk space. For this course, Miniconda is recommended because it is lightweight and sufficient for our needs.
@@ -271,13 +284,12 @@ This will create a new environment with the name and packages specified in the f
 
 ## 5. List of common Conda commands
 
-| Task                                            | Command                                 |
-| ----------------------------------------------- | --------------------------------------- |
-| Create a new environment                        | `conda create -n myenv python=3.11`     |
-| Activate an environment                         | `conda activate myenv`                  |
-| List all environments                           | `conda env list`                        |
-| Install packages                                | `conda install numpy matplotlib pandas` |
-| List all packages and versions in a environment | `conda list`                            |
-| Update all packages in an environment           | `conda update --all`                    |
-| Get general info of an environment              | `conda info`                            |
-| Launch JupyterLab                               | `jupyter lab`                           |
+| Task                                                       | Command                                 |
+| ---------------------------------------------------------- | --------------------------------------- |
+| Create a new environment                                   | `conda create -name myenv python=3.11`  |
+| Activate an environment                                    | `conda activate myenv`                  |
+| List all environments                                      | `conda env list`                        |
+| Install packages                                           | `conda install numpy matplotlib pandas` |
+| List all the packages and their versions in an environment | `conda list`                            |
+| Update all the packages in the environment                 | `conda update --all`                    |
+| Obtain general information about an environment            | `conda info`                            |
